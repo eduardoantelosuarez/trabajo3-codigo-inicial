@@ -19,8 +19,7 @@ public class CuentaTest extends TestCase {
 	}
 
 	@After
-	public void tearDown() throws Exception {
-	}
+	public void tearDown() throws Exception { }
 
 	@Test
 	public void testIngresar1000() {
@@ -37,9 +36,7 @@ public class CuentaTest extends TestCase {
 		try {
 			cuenta.retirar(1000);
 			fail("No salta excepcion");
-		} catch (Exception e) {
-		}
-		
+		} catch (Exception e) { }
 	}
 
 	@Test
@@ -51,8 +48,5 @@ public class CuentaTest extends TestCase {
 		} catch (Exception e) {
 			fail("No deberia haber fallado");
 		}
-
-		
 	}
-
 }
