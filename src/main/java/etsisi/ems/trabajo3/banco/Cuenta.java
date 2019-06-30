@@ -59,9 +59,13 @@ public class Cuenta {
 	}
 
 	public double getSaldo() {
+		return this.getSaldo(this.mMovimientos);
+	}
+	
+	public double getSaldo(Vector<Movimiento> movimientos) {
 		double r = 0.0;
-		for (int i = 0; i < this.mMovimientos.size(); i++) {
-			Movimiento m = (Movimiento) mMovimientos.elementAt(i);
+		for (int i = 0; i < movimientos.size(); i++) {
+			Movimiento m = (Movimiento) movimientos.elementAt(i);
 			r += m.getImporte();			
 		}
 		return r;

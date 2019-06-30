@@ -122,17 +122,8 @@ return credito;}
 		mMovimientos.addElement(m);
 	}
 
-	public double getSaldo() {
-		double r = 0.0;
-		for (int i = 0; i < this.mMovimientos.size(); i++) {
-			Movimiento m = (Movimiento) mMovimientos.elementAt(i);
-			r += m.getImporte();
-		}
-		return r;
-	}
-
 	public double getCreditoDisponible() {
-		return mCredito - getSaldo();
+		return mCredito - this.mCuentaAsociada.getSaldo(this.mMovimientos);
 	}
 
 	public void liquidar(int mes, int anyo) throws Exception {

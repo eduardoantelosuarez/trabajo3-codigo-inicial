@@ -39,13 +39,13 @@ public class CreditoTest extends TestCase {
 	public void testIngresar500() {
 		try {
 			double saldoAnteriorCuenta = cuenta.getSaldo();
-			double saldoAnteriorTarjeta = tarjeta.getSaldo();
+			double saldoAnteriorTarjeta = cuenta.getSaldo(tarjeta.mMovimientos);
 			double creditoAnterior = tarjeta.getCreditoDisponible();
 
 			tarjeta.ingresar(500.0);
 
 			double saldoActualCuenta = cuenta.getSaldo();
-			double saldoActualTarjeta = tarjeta.getSaldo();
+			double saldoActualTarjeta = cuenta.getSaldo(tarjeta.mMovimientos);
 			double creditoActual = tarjeta.getCreditoDisponible();
 			
 			double comision = (500 * 0.05 < 3.0 ? 3 : 500 * 0.05);
@@ -66,7 +66,7 @@ public class CreditoTest extends TestCase {
 			double creditoAnterior = tarjeta.getCreditoDisponible();
 			tarjeta.retirar(1.0);
 			double saldoActualCuenta = cuenta.getSaldo();
-			double saldoActualTarjeta = tarjeta.getSaldo();
+			double saldoActualTarjeta = cuenta.getSaldo(tarjeta.mMovimientos);
 			double creditoActual = tarjeta.getCreditoDisponible();
 
 			assertTrue(saldoActualCuenta == saldoAnteriorCuenta);			
@@ -84,7 +84,7 @@ public class CreditoTest extends TestCase {
 			double creditoAnterior = tarjeta.getCreditoDisponible();
 			tarjeta.retirar(300.0);
 			double saldoActualCuenta = cuenta.getSaldo();
-			double saldoActualTarjeta = tarjeta.getSaldo();
+			double saldoActualTarjeta = cuenta.getSaldo(tarjeta.mMovimientos);
 			double creditoActual = tarjeta.getCreditoDisponible();
 
 			assertTrue(saldoActualCuenta == saldoAnteriorCuenta);			
@@ -102,7 +102,7 @@ public class CreditoTest extends TestCase {
 			double creditoAnterior = tarjeta.getCreditoDisponible();
 			tarjeta.pagoEnEstablecimiento("Mango", 600);
 			double saldoActualCuenta = cuenta.getSaldo();
-			double saldoActualTarjeta = tarjeta.getSaldo();
+			double saldoActualTarjeta = cuenta.getSaldo(tarjeta.mMovimientos);
 			double creditoActual = tarjeta.getCreditoDisponible();
 
 			assertTrue(saldoActualCuenta == saldoAnteriorCuenta);			
