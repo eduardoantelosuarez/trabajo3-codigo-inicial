@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_UdLvsJt4Eem2qaoTxS17Aw">
+  <modelElement href="trabajo3-codigo-inicial.uml#_Uzpu8Jt4Eem2qaoTxS17Aw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_WaV_8Jt4Eem2qaoTxS17Aw" sourceAnchor="0.0,211.0" targetAnchor="323.0,116.0" target="_WcIvsJt4Eem2qaoTxS17Aw" source="_WaYcMJt4Eem2qaoTxS17Aw">
+    <modelElement href="trabajo3-codigo-inicial.uml#_U6G8QZt4Eem2qaoTxS17Aw"/>
+    <stereotypes xmi:id="_WaV_8Zt4Eem2qaoTxS17Aw" name="Reference">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6IKYJt4Eem2qaoTxS17Aw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_WaV_8pt4Eem2qaoTxS17Aw" text="">
+      <visualProperties xmi:id="_W7EucJt4Eem2qaoTxS17Aw" position="31.5,-8.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_WaV_85t4Eem2qaoTxS17Aw" aggregationKind="NONE" name="">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6G8Qpt4Eem2qaoTxS17Aw"/>
+      <visualProperties xmi:id="_W7DgUJt4Eem2qaoTxS17Aw" position="-20.0,3.5"/>
+      <visibility xmi:id="_WaV_9Jt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaV_9Zt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_WaV_9pt4Eem2qaoTxS17Aw" aggregationKind="NONE" name="mCuentaAsociada" navigable="true">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5WHQJt4Eem2qaoTxS17Aw"/>
+      <visualProperties xmi:id="_W7FVgJt4Eem2qaoTxS17Aw" position="5.5,-48.499999999999915"/>
+      <visibility xmi:id="_WaV_95t4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaV_-Jt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_WaXOEJt4Eem2qaoTxS17Aw" source="_WaYcMJt4Eem2qaoTxS17Aw">
+    <modelElement href="trabajo3-codigo-inicial.uml#_U6IKYZt4Eem2qaoTxS17Aw"/>
+    <stereotypes xmi:id="_WaXOEZt4Eem2qaoTxS17Aw" name="Reference">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6IxcJt4Eem2qaoTxS17Aw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_WaXOEpt4Eem2qaoTxS17Aw" text=""/>
+    <sourceRole xmi:id="_WaXOE5t4Eem2qaoTxS17Aw" aggregationKind="NONE" name="">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6IKYpt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaXOFJt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaXOFZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_WaXOFpt4Eem2qaoTxS17Aw" aggregationKind="NONE" name="mMovimientos" navigable="true">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5X8cZt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaXOF5t4Eem2qaoTxS17Aw" label="#"/>
+      <cardinality xmi:id="_WaXOGJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_WaX1IJt4Eem2qaoTxS17Aw" source="_WaYcMJt4Eem2qaoTxS17Aw">
+    <modelElement href="trabajo3-codigo-inicial.uml#_U6JYgJt4Eem2qaoTxS17Aw"/>
+    <stereotypes xmi:id="_WaX1IZt4Eem2qaoTxS17Aw" name="Reference">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6J_kJt4Eem2qaoTxS17Aw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_WaX1Ipt4Eem2qaoTxS17Aw" text=""/>
+    <sourceRole xmi:id="_WaX1I5t4Eem2qaoTxS17Aw" aggregationKind="NONE" name="">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6JYgZt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaX1JJt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaX1JZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_WaX1Jpt4Eem2qaoTxS17Aw" aggregationKind="NONE" name="mFechaDeCaducidad" navigable="true">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5bm0Zt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaX1J5t4Eem2qaoTxS17Aw" label="~"/>
+      <cardinality xmi:id="_WaX1KJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_WbWskJt4Eem2qaoTxS17Aw" source="_WcIvsJt4Eem2qaoTxS17Aw">
+    <modelElement href="trabajo3-codigo-inicial.uml#_U6Cq0Zt4Eem2qaoTxS17Aw"/>
+    <stereotypes xmi:id="_WcGTc5t4Eem2qaoTxS17Aw" name="Reference">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6D48Jt4Eem2qaoTxS17Aw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_WcGTcJt4Eem2qaoTxS17Aw" text=""/>
+    <sourceRole xmi:id="_WcGTcZt4Eem2qaoTxS17Aw" aggregationKind="NONE" name="">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6Cq0pt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WcHhkJt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WcG6gJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_WcGTcpt4Eem2qaoTxS17Aw" aggregationKind="NONE" name="mMovimientos" navigable="true">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5FokZt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WcHhkpt4Eem2qaoTxS17Aw" label="#"/>
+      <cardinality xmi:id="_WcHhkZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Wc4WkJt4Eem2qaoTxS17Aw" sourceAnchor="236.0,0.0" targetAnchor="162.0,232.0" target="_WcIvsJt4Eem2qaoTxS17Aw" source="_WeDbQJt4Eem2qaoTxS17Aw">
+    <modelElement href="trabajo3-codigo-inicial.uml#_U6D48Zt4Eem2qaoTxS17Aw"/>
+    <stereotypes xmi:id="_WdmvUZt4Eem2qaoTxS17Aw" name="Reference">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6FHEJt4Eem2qaoTxS17Aw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_WdmIQJt4Eem2qaoTxS17Aw" text="">
+      <visualProperties xmi:id="_W7I_4Jt4Eem2qaoTxS17Aw" position="-18.5,-12.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_WdmIQZt4Eem2qaoTxS17Aw" aggregationKind="NONE" name="">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6D48pt4Eem2qaoTxS17Aw"/>
+      <visualProperties xmi:id="_W7HKsJt4Eem2qaoTxS17Aw" position="-20.5,-49.5"/>
+      <visibility xmi:id="_Wd_J0Zt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_Wd_J0Jt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_WdmvUJt4Eem2qaoTxS17Aw" aggregationKind="NONE" name="mCuentaAsociada" navigable="true">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5Sc4Jt4Eem2qaoTxS17Aw"/>
+      <visualProperties xmi:id="_W7I_4Zt4Eem2qaoTxS17Aw" position="9.0,5.0"/>
+      <visibility xmi:id="_Wd_w4Zt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_Wd_w4Jt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_WdmvUpt4Eem2qaoTxS17Aw" source="_WeDbQJt4Eem2qaoTxS17Aw">
+    <modelElement href="trabajo3-codigo-inicial.uml#_U6FuIJt4Eem2qaoTxS17Aw"/>
+    <stereotypes xmi:id="_WeAX8pt4Eem2qaoTxS17Aw" name="Reference">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6G8QJt4Eem2qaoTxS17Aw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Wd_w45t4Eem2qaoTxS17Aw" text=""/>
+    <sourceRole xmi:id="_WeAX8Jt4Eem2qaoTxS17Aw" aggregationKind="NONE" name="">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6FuIZt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WeCNIZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WeCNIJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_WeAX8Zt4Eem2qaoTxS17Aw" aggregationKind="NONE" name="mFechaDeCaducidad" navigable="true">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5U5IJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WeCNI5t4Eem2qaoTxS17Aw" label="~"/>
+      <cardinality xmi:id="_WeCNIpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_WfJncJt4Eem2qaoTxS17Aw" source="_WgiukJt4Eem2qaoTxS17Aw">
+    <modelElement href="trabajo3-codigo-inicial.uml#_U6BcsJt4Eem2qaoTxS17Aw"/>
+    <stereotypes xmi:id="_WgbZ0pt4Eem2qaoTxS17Aw" name="Reference">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6Cq0Jt4Eem2qaoTxS17Aw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_WgaywJt4Eem2qaoTxS17Aw" text=""/>
+    <sourceRole xmi:id="_WgbZ0Jt4Eem2qaoTxS17Aw" aggregationKind="NONE" name="">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U6BcsZt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_Wgcn8Jt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WgcA4Jt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_WgbZ0Zt4Eem2qaoTxS17Aw" aggregationKind="NONE" name="mFecha" navigable="true">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5B-MJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WgfrQJt4Eem2qaoTxS17Aw" label="#"/>
+      <cardinality xmi:id="_Wgcn8Zt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_WaYcMJt4Eem2qaoTxS17Aw" name="Credito" associationsOut="_WaV_8Jt4Eem2qaoTxS17Aw _WaXOEJt4Eem2qaoTxS17Aw _WaX1IJt4Eem2qaoTxS17Aw">
+    <modelElement href="trabajo3-codigo-inicial.uml#_U1StsJt4Eem2qaoTxS17Aw"/>
+    <visualProperties xmi:id="_WaYcMZt4Eem2qaoTxS17Aw" position="689.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_WaYcMpt4Eem2qaoTxS17Aw" label="+"/>
+    <attributes xmi:id="_WaYcM5t4Eem2qaoTxS17Aw" name="mCuentaAsociada">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5WHQJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WaYcNJt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5WuUJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WaYcNZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYcNpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WaYcN5t4Eem2qaoTxS17Aw" name="Cuenta">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U08vcJt4Eem2qaoTxS17Aw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WaYcOJt4Eem2qaoTxS17Aw" name="mCredito">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5XVYJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WaYcOZt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5X8cJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WaYcOpt4Eem2qaoTxS17Aw" label="#"/>
+      <cardinality xmi:id="_WaYcO5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WaYcPJt4Eem2qaoTxS17Aw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WaYcPZt4Eem2qaoTxS17Aw" name="mMovimientos">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5X8cZt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WaYcPpt4Eem2qaoTxS17Aw" name="Generics">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5ZKkJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_WaYcP5t4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5ZxoJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WaYcQJt4Eem2qaoTxS17Aw" label="#"/>
+      <cardinality xmi:id="_WaYcQZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WaYcQpt4Eem2qaoTxS17Aw" name="Vector">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U32ScJt4Eem2qaoTxS17Aw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WaYcQ5t4Eem2qaoTxS17Aw" name="mNumero">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5aYsJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WaYcRJt4Eem2qaoTxS17Aw" name="MultiDeclaration">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5a_wJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_WaYcRZt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5bm0Jt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WaYcRpt4Eem2qaoTxS17Aw" label="~"/>
+      <cardinality xmi:id="_WaYcR5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WaYcSJt4Eem2qaoTxS17Aw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WaYcSZt4Eem2qaoTxS17Aw" name="mFechaDeCaducidad">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5bm0Zt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WaYcSpt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5c08Jt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WaYcS5t4Eem2qaoTxS17Aw" label="~"/>
+      <cardinality xmi:id="_WaYcTJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WaYcTZt4Eem2qaoTxS17Aw" name="LocalDate">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U3uWoJt4Eem2qaoTxS17Aw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WaYcTpt4Eem2qaoTxS17Aw" name="mNombreEntidad">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5dcAJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WaYcT5t4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5dcAZt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WaYcUJt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYcUZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WaYcUpt4Eem2qaoTxS17Aw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WaYcU5t4Eem2qaoTxS17Aw" name="mCCV">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5eDEJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WaYcVJt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5eqIJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WaYcVZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYcVpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WaYcV5t4Eem2qaoTxS17Aw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WaYcWJt4Eem2qaoTxS17Aw" name="mMarcaInternacional">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5eqIZt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WaYcWZt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5fRMJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WaYcWpt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYcW5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WaYcXJt4Eem2qaoTxS17Aw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WaYcXZt4Eem2qaoTxS17Aw" name="mTipo">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5fRMZt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WaYcXpt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5f4QJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WaYcX5t4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYcYJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WaYcYZt4Eem2qaoTxS17Aw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WaYcYpt4Eem2qaoTxS17Aw" name="mTitular">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U55g4Jt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WaYcY5t4Eem2qaoTxS17Aw" name="MultiDeclaration">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U56H8Jt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_WaYcZJt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U56H8Zt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WaYcZZt4Eem2qaoTxS17Aw" label="~"/>
+      <cardinality xmi:id="_WaYcZpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WaYcZ5t4Eem2qaoTxS17Aw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_WaYcaJt4Eem2qaoTxS17Aw" name="calcularCredito">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1WYEJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaYcaZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYcapt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WaYca5t4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1W_IZt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WaYcbJt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_WaYcbZt4Eem2qaoTxS17Aw" name="tipo">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1W_IJt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcbpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcb5t4Eem2qaoTxS17Aw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WaYccJt4Eem2qaoTxS17Aw" name="retirar">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1XmMJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaYccZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYccpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WaYcc5t4Eem2qaoTxS17Aw" name="x">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1XmMZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcdJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcdZt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WaYcdpt4Eem2qaoTxS17Aw" name="ingresar">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1YNQJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaYcd5t4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYceJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WaYceZt4Eem2qaoTxS17Aw" name="x">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1Y0UJt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcept4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYce5t4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WaYcfJt4Eem2qaoTxS17Aw" name="pagoEnEstablecimiento">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1ZbYJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaYcfZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYcfpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WaYcf5t4Eem2qaoTxS17Aw" name="datos">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1ZbYZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcgJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcgZt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYcgpt4Eem2qaoTxS17Aw" name="x">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1ZbYpt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcg5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYchJt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WaYchZt4Eem2qaoTxS17Aw" name="getSaldo">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1aCcJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaYchpt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYch5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WaYciJt4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1apgJt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WaYciZt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_WaYcipt4Eem2qaoTxS17Aw" name="getCreditoDisponible">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1apgZt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaYci5t4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYcjJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WaYcjZt4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1bQkJt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WaYcjpt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_WaYcj5t4Eem2qaoTxS17Aw" name="liquidar">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1bQkZt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaYckJt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYckZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WaYckpt4Eem2qaoTxS17Aw" name="mes">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1b3oJt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYck5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYclJt4Eem2qaoTxS17Aw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYclZt4Eem2qaoTxS17Aw" name="anyo">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1b3oZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYclpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcl5t4Eem2qaoTxS17Aw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WaYcmJt4Eem2qaoTxS17Aw" name="liquidarPlazos">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1cesJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaYcmZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYcmpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WaYcm5t4Eem2qaoTxS17Aw" name="mes">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1cesZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcnJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcnZt4Eem2qaoTxS17Aw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYcnpt4Eem2qaoTxS17Aw" name="anyo">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1cespt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcn5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcoJt4Eem2qaoTxS17Aw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WaYcoZt4Eem2qaoTxS17Aw" name="setCuenta">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U4LCkJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WaYcopt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYco5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WaYcpJt4Eem2qaoTxS17Aw" name="c">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4LCkZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcpZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcppt4Eem2qaoTxS17Aw" name="Cuenta">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U08vcJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WaYcp5t4Eem2qaoTxS17Aw" name="Credito">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U4zUsJt4Eem2qaoTxS17Aw"/>
+      <keywords xmi:id="_WaYcqJt4Eem2qaoTxS17Aw" keyword="create"/>
+      <visibility xmi:id="_WaYcqZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYcqpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WaYcq5t4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U40i0pt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WaYcrJt4Eem2qaoTxS17Aw" name="Credito">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U1StsJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_WaYcrZt4Eem2qaoTxS17Aw" name="numero">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4zUsZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcrpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcr5t4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYcsJt4Eem2qaoTxS17Aw" name="titular">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4z7wJt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcsZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcspt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYcs5t4Eem2qaoTxS17Aw" name="fechacaducidad">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4z7wZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYctJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYctZt4Eem2qaoTxS17Aw" name="LocalDate">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U3uWoJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYctpt4Eem2qaoTxS17Aw" name="credito">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4z7wpt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYct5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcuJt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYcuZt4Eem2qaoTxS17Aw" name="marcainternacional">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4z7w5t4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcupt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcu5t4Eem2qaoTxS17Aw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYcvJt4Eem2qaoTxS17Aw" name="nombreentidad">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4z7xJt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcvZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcvpt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYcv5t4Eem2qaoTxS17Aw" name="ccv">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4z7xZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcwJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcwZt4Eem2qaoTxS17Aw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WaYcwpt4Eem2qaoTxS17Aw" name="Credito">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U41J4Jt4Eem2qaoTxS17Aw"/>
+      <keywords xmi:id="_WaYcw5t4Eem2qaoTxS17Aw" keyword="create"/>
+      <visibility xmi:id="_WaYcxJt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WaYcxZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WaYcxpt4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U42YApt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WaYcx5t4Eem2qaoTxS17Aw" name="Credito">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U1StsJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_WaYcyJt4Eem2qaoTxS17Aw" name="numero">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U41J4Zt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcyZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYcypt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYcy5t4Eem2qaoTxS17Aw" name="titular">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U41w8Jt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYczJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYczZt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYczpt4Eem2qaoTxS17Aw" name="fechacaducidad">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U41w8Zt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYcz5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYc0Jt4Eem2qaoTxS17Aw" name="LocalDate">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U3uWoJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYc0Zt4Eem2qaoTxS17Aw" name="tipo">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U41w8pt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYc0pt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYc05t4Eem2qaoTxS17Aw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYc1Jt4Eem2qaoTxS17Aw" name="marcainternacional">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U41w85t4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYc1Zt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYc1pt4Eem2qaoTxS17Aw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYc15t4Eem2qaoTxS17Aw" name="nombreentidad">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U41w9Jt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYc2Jt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYc2Zt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WaYc2pt4Eem2qaoTxS17Aw" name="ccv">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U41w9Zt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WaYc25t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WaYc3Jt4Eem2qaoTxS17Aw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_WcIvsJt4Eem2qaoTxS17Aw" name="Cuenta" associationsIn="_WaV_8Jt4Eem2qaoTxS17Aw _Wc4WkJt4Eem2qaoTxS17Aw" associationsOut="_WbWskJt4Eem2qaoTxS17Aw">
+    <modelElement href="trabajo3-codigo-inicial.uml#_U08vcJt4Eem2qaoTxS17Aw"/>
+    <visualProperties xmi:id="_WcIvsZt4Eem2qaoTxS17Aw" position="86.0,125.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_WcIvspt4Eem2qaoTxS17Aw" label="+"/>
+    <attributes xmi:id="_WcIvs5t4Eem2qaoTxS17Aw" name="mNumero">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5EacJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WcIvtJt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5FBgJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WcIvtZt4Eem2qaoTxS17Aw" label="#"/>
+      <cardinality xmi:id="_WcIvtpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WcIvt5t4Eem2qaoTxS17Aw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WcIvuJt4Eem2qaoTxS17Aw" name="mTitular">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5FBgZt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WcIvuZt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5FokJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WcIvupt4Eem2qaoTxS17Aw" label="#"/>
+      <cardinality xmi:id="_WcIvu5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WcIvvJt4Eem2qaoTxS17Aw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WcIvvZt4Eem2qaoTxS17Aw" name="mMovimientos">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5FokZt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WcIvvpt4Eem2qaoTxS17Aw" name="Generics">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5QnsJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_WcIvv5t4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5ROwJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WcIvwJt4Eem2qaoTxS17Aw" label="#"/>
+      <cardinality xmi:id="_WcIvwZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WcIvwpt4Eem2qaoTxS17Aw" name="Vector">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U32ScJt4Eem2qaoTxS17Aw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_WcIvw5t4Eem2qaoTxS17Aw" name="Cuenta">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U0-koJt4Eem2qaoTxS17Aw"/>
+      <keywords xmi:id="_WcIvxJt4Eem2qaoTxS17Aw" keyword="create"/>
+      <visibility xmi:id="_WcIvxZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WcIvxpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WcIvx5t4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U0-kpZt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WcIvyJt4Eem2qaoTxS17Aw" name="Cuenta">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U08vcJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_WcIvyZt4Eem2qaoTxS17Aw" name="numero">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U0-koZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WcIvypt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WcIvy5t4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WcIvzJt4Eem2qaoTxS17Aw" name="titular">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U0-kopt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WcIvzZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WcIvzpt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WcIvz5t4Eem2qaoTxS17Aw" name="ingresar">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U0_LsJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WcJWwJt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WcJWwZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WcJWwpt4Eem2qaoTxS17Aw" name="x">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U0_ywJt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WcJWw5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WcJWxJt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WcJWxZt4Eem2qaoTxS17Aw" name="retirar">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1AZ0Jt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WcJWxpt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WcJWx5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WcJWyJt4Eem2qaoTxS17Aw" name="x">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1AZ0Zt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WcJWyZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WcJWypt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WcJWy5t4Eem2qaoTxS17Aw" name="ingresar">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1Bn8Jt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WcJWzJt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WcJWzZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WcJWzpt4Eem2qaoTxS17Aw" name="concepto">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1Bn8Zt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WcJWz5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WcJW0Jt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WcJW0Zt4Eem2qaoTxS17Aw" name="x">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1Bn8pt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WcJW0pt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WcJW05t4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WcJW1Jt4Eem2qaoTxS17Aw" name="retirar">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1C2EJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WcJW1Zt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WcJW1pt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WcJW15t4Eem2qaoTxS17Aw" name="concepto">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1C2EZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WcJW2Jt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WcJW2Zt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WcJW2pt4Eem2qaoTxS17Aw" name="x">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1C2Ept4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WcJW25t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WcJW3Jt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WcJW3Zt4Eem2qaoTxS17Aw" name="getSaldo">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1DdIJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WcJW3pt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WcJW35t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WcJW4Jt4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1DdIZt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WcJW4Zt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_WcJW4pt4Eem2qaoTxS17Aw" name="addMovimiento">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U35VwJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WcJW45t4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WcJW5Jt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WcJW5Zt4Eem2qaoTxS17Aw" name="m">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U35VwZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WcJW5pt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WcJW55t4Eem2qaoTxS17Aw" name="Movimiento">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U0xJQJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_WeDbQJt4Eem2qaoTxS17Aw" name="Debito" associationsOut="_Wc4WkJt4Eem2qaoTxS17Aw _WdmvUpt4Eem2qaoTxS17Aw">
+    <modelElement href="trabajo3-codigo-inicial.uml#_U1GgcJt4Eem2qaoTxS17Aw"/>
+    <visualProperties xmi:id="_WeDbQZt4Eem2qaoTxS17Aw" position="12.0,550.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_WeDbQpt4Eem2qaoTxS17Aw" label="+"/>
+    <attributes xmi:id="_WeDbQ5t4Eem2qaoTxS17Aw" name="mCuentaAsociada">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5Sc4Jt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WeDbRJt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5TD8Jt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WeDbRZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WeDbRpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WeDbR5t4Eem2qaoTxS17Aw" name="Cuenta">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U08vcJt4Eem2qaoTxS17Aw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WeDbSJt4Eem2qaoTxS17Aw" name="mNumero">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5TD8Zt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WeDbSZt4Eem2qaoTxS17Aw" name="MultiDeclaration">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5TrAJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_WeDbSpt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5USEJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WeDbS5t4Eem2qaoTxS17Aw" label="~"/>
+      <cardinality xmi:id="_WeDbTJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WeDbTZt4Eem2qaoTxS17Aw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WeDbTpt4Eem2qaoTxS17Aw" name="mFechaDeCaducidad">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5U5IJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WeDbT5t4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5VgMJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WeDbUJt4Eem2qaoTxS17Aw" label="~"/>
+      <cardinality xmi:id="_WeDbUZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WeDbUpt4Eem2qaoTxS17Aw" name="LocalDate">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U3uWoJt4Eem2qaoTxS17Aw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WeDbU5t4Eem2qaoTxS17Aw" name="mTitular">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U54SwJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WeDbVJt4Eem2qaoTxS17Aw" name="MultiDeclaration">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5450Jt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_WeDbVZt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5450Zt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WeDbVpt4Eem2qaoTxS17Aw" label="~"/>
+      <cardinality xmi:id="_WeDbV5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WeDbWJt4Eem2qaoTxS17Aw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_WeDbWZt4Eem2qaoTxS17Aw" name="retirar">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1I8sJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WeDbWpt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WeDbW5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WeDbXJt4Eem2qaoTxS17Aw" name="x">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1I8sZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WeDbXZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WeDbXpt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WeDbX5t4Eem2qaoTxS17Aw" name="ingresar">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1JjwJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WeDbYJt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WeDbYZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WeDbYpt4Eem2qaoTxS17Aw" name="x">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1KK0Jt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WeDbY5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WeDbZJt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WeDbZZt4Eem2qaoTxS17Aw" name="pagoEnEstablecimiento">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1Kx4Jt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WeDbZpt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WeDbZ5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WeDbaJt4Eem2qaoTxS17Aw" name="datos">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1Kx4Zt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WeDbaZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WeDbapt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WeDba5t4Eem2qaoTxS17Aw" name="x">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1LY8Jt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WeDbbJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WeDbbZt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WeDbbpt4Eem2qaoTxS17Aw" name="getSaldo">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U1MAAJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WeDbb5t4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WeDbcJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WeDbcZt4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U1MAAZt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WeDbcpt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_WeDbc5t4Eem2qaoTxS17Aw" name="setCuenta">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U38ZEJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WeDbdJt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WeDbdZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WeDbdpt4Eem2qaoTxS17Aw" name="c">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U38ZEZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WeDbd5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WeDbeJt4Eem2qaoTxS17Aw" name="Cuenta">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U08vcJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WeDbeZt4Eem2qaoTxS17Aw" name="Debito">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U4wRYJt4Eem2qaoTxS17Aw"/>
+      <keywords xmi:id="_WeDbept4Eem2qaoTxS17Aw" keyword="create"/>
+      <visibility xmi:id="_WeDbe5t4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WeDbfJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WeDbfZt4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4w4dJt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WeDbfpt4Eem2qaoTxS17Aw" name="Debito">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U1GgcJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_WeDbf5t4Eem2qaoTxS17Aw" name="numero">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4wRYZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WeDbgJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WeDbgZt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WeDbgpt4Eem2qaoTxS17Aw" name="titular">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4w4cJt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WeDbg5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WeDbhJt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_WeDbhZt4Eem2qaoTxS17Aw" name="fechaCaducidad">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4w4cZt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_WeDbhpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WeDbh5t4Eem2qaoTxS17Aw" name="LocalDate">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U3uWoJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_WgiukJt4Eem2qaoTxS17Aw" name="Movimiento" associationsOut="_WfJncJt4Eem2qaoTxS17Aw">
+    <modelElement href="trabajo3-codigo-inicial.uml#_U0xJQJt4Eem2qaoTxS17Aw"/>
+    <visualProperties xmi:id="_WgiukZt4Eem2qaoTxS17Aw" position="10.0,824.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Wgiukpt4Eem2qaoTxS17Aw" label="+"/>
+    <attributes xmi:id="_Wgiuk5t4Eem2qaoTxS17Aw" name="mConcepto">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5AwEJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WgiulJt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5BXIJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WgiulZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_Wgiulpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_Wgiul5t4Eem2qaoTxS17Aw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WgiumJt4Eem2qaoTxS17Aw" name="mFecha">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5B-MJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_WgiumZt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5B-MZt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_Wgiumpt4Eem2qaoTxS17Aw" label="#"/>
+      <cardinality xmi:id="_Wgium5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WgiunJt4Eem2qaoTxS17Aw" name="LocalDate">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U3uWoJt4Eem2qaoTxS17Aw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_WgiunZt4Eem2qaoTxS17Aw" name="mImporte">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5ClQJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_Wgiunpt4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5ClQZt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_Wgiun5t4Eem2qaoTxS17Aw" label="-"/>
+      <cardinality xmi:id="_WgiuoJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_WgiuoZt4Eem2qaoTxS17Aw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Wgiuopt4Eem2qaoTxS17Aw" name="mLiquidado">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U5DMUJt4Eem2qaoTxS17Aw"/>
+      <stereotypes xmi:id="_Wgiuo5t4Eem2qaoTxS17Aw" name="LegacyStyledElement">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U5DzYJt4Eem2qaoTxS17Aw"/>
+      </stereotypes>
+      <visibility xmi:id="_WgiupJt4Eem2qaoTxS17Aw" label="-"/>
+      <cardinality xmi:id="_WgiupZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <type xmi:id="_Wgiuppt4Eem2qaoTxS17Aw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Wgiup5t4Eem2qaoTxS17Aw" name="Movimiento">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U00MkJt4Eem2qaoTxS17Aw"/>
+      <keywords xmi:id="_WgiuqJt4Eem2qaoTxS17Aw" keyword="create"/>
+      <visibility xmi:id="_WgiuqZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_Wgiuqpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Wgiuq5t4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U01asJt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WgiurJt4Eem2qaoTxS17Aw" name="Movimiento">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U0xJQJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_WgiurZt4Eem2qaoTxS17Aw" name="getImporte">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U01asZt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_Wgiurpt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_Wgiur5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WgiusJt4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U01aspt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WgiusZt4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Wgiuspt4Eem2qaoTxS17Aw" name="getConcepto">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U02BwJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_Wgius5t4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WgiutJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WgiutZt4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U02o0Jt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_Wgiutpt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Wgiut5t4Eem2qaoTxS17Aw" name="setConcepto">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U03P4Jt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WgiuuJt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WgiuuZt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Wgiuupt4Eem2qaoTxS17Aw" name="newMConcepto">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U03P4Zt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_Wgiuu5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_WgiuvJt4Eem2qaoTxS17Aw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WgiuvZt4Eem2qaoTxS17Aw" name="getFecha">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U0328Jt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_Wgiuvpt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_Wgiuv5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_WgiuwJt4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4qx0Jt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WgiuwZt4Eem2qaoTxS17Aw" name="LocalDate">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U3uWoJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Wgiuwpt4Eem2qaoTxS17Aw" name="setImporte">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U04eAJt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_Wgiuw5t4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_WgiuxJt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_WgiuxZt4Eem2qaoTxS17Aw" name="newMImporte">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U05FEJt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_Wgiuxpt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_Wgiux5t4Eem2qaoTxS17Aw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_WgiuyJt4Eem2qaoTxS17Aw" name="isLiquidado">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U05FEZt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_WgiuyZt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_Wgiuypt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Wgiuy5t4Eem2qaoTxS17Aw">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U05sIJt4Eem2qaoTxS17Aw"/>
+        <type xmi:id="_WgiuzJt4Eem2qaoTxS17Aw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_WgiuzZt4Eem2qaoTxS17Aw" name="setLiquidado">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U05sIZt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_Wgiuzpt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_Wgiuz5t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Wgiu0Jt4Eem2qaoTxS17Aw" name="mliquidado">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U06TMJt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_Wgiu0Zt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_Wgiu0pt4Eem2qaoTxS17Aw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Wgiu05t4Eem2qaoTxS17Aw" name="setFecha">
+      <modelElement href="trabajo3-codigo-inicial.uml#_U4rY4Jt4Eem2qaoTxS17Aw"/>
+      <visibility xmi:id="_Wgiu1Jt4Eem2qaoTxS17Aw" label="+"/>
+      <cardinality xmi:id="_Wgiu1Zt4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Wgiu1pt4Eem2qaoTxS17Aw" name="newMFecha">
+        <modelElement href="trabajo3-codigo-inicial.uml#_U4rY4Zt4Eem2qaoTxS17Aw"/>
+        <cardinality xmi:id="_Wgiu15t4Eem2qaoTxS17Aw" label="1" max="1" min="1"/>
+        <type xmi:id="_Wgiu2Jt4Eem2qaoTxS17Aw" name="LocalDate">
+          <modelElement href="trabajo3-codigo-inicial.uml#_U3uWoJt4Eem2qaoTxS17Aw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
