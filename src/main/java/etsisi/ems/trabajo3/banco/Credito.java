@@ -8,29 +8,23 @@ import java.time.ZoneId;
 public class Credito extends Tarjeta{
 	protected double mCredito;
 	protected Vector<Movimiento> mMovimientos;
-	public String mNombreEntidad;
-	public int mCCV;
-	public int mMarcaInternacional; //mastercard, maestro, visa ...
-	public int mTipo; //oro platino clásica
+	private EntidadEmisora mEntidadEmisora;
+	private int mTipo;
 
 
-	public Credito(String numero, String titular, LocalDate fechaCaducidad, double credito, int marcaInternacional,	String nombreEntidad, int ccv) {
-		super(numero, titular, fechaCaducidad);
+	public Credito(Tarjeta tarjeta, double credito, EntidadEmisora entidadEmisora) {
+		super(tarjeta.getmNumero(), tarjeta.getmTitular(), tarjeta.getmFechaDeCaducidad());
 		mCredito = credito;
 		mMovimientos = new Vector<Movimiento>();
-		mMarcaInternacional = marcaInternacional;
-		mNombreEntidad = nombreEntidad;
-		mCCV = ccv;
+		this.mEntidadEmisora = entidadEmisora;
 	}
 	
-	public Credito(String numero, String titular, LocalDate fechaCaducidad, int tipo, int marcaInternacional, String nombreEntidad, int ccv) {
-		super(numero, titular, fechaCaducidad);
+	public Credito(Tarjeta tarjeta, EntidadEmisora entidadEmisora, int tipo) {
+		super(tarjeta.getmNumero(), tarjeta.getmTitular(), tarjeta.getmFechaDeCaducidad());
 		mTipo = tipo;
 		mCredito = calcularCredito(mTipo);
 		mMovimientos = new Vector<Movimiento>();
-		mMarcaInternacional = marcaInternacional;
-		mNombreEntidad = nombreEntidad;
-		mCCV = ccv;
+		this.mEntidadEmisora = entidadEmisora;
 	}
 	
 	public double calcularCredito(int tipo) {
@@ -54,7 +48,7 @@ public class Credito extends Tarjeta{
 
 	public void retirar(double x) throws Exception {	
 		double comisiontarifa;
-		switch (mMarcaInternacional) {
+		switch (this.mEntidadEmisora.getmMarcaInternacional()) {
 		case 1: //mastercard
 			comisiontarifa = 0.05;
 			break;	

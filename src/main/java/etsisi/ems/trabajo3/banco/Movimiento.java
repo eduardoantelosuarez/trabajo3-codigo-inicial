@@ -1,8 +1,6 @@
 package etsisi.ems.trabajo3.banco;
 
 import java.time.LocalDate;
-import java.time.ZoneId;
-import java.util.Date;
 
 public class Movimiento {
 	public String mConcepto;
@@ -12,7 +10,6 @@ public class Movimiento {
 
 	public Movimiento() {		
 		setLiquidado(false); //lo necesito para los movimientos de las tarjetas de crédito
-
 	}
 
 	public double getImporte() {

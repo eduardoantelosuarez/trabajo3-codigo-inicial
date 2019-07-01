@@ -1,11 +1,9 @@
 package etsisi.ems.trabajo3.banco;
 
-import java.time.LocalDate;
-
 public class Debito extends Tarjeta {
 	
-	public Debito(String numero, String titular, LocalDate fechaCaducidad) {
-		super(numero, titular, fechaCaducidad);
+	public Debito(Tarjeta tarjeta) {
+		super(tarjeta.getmNumero(), tarjeta.getmTitular(), tarjeta.getmFechaDeCaducidad());
 	}
 
 	public void retirar(double x) throws Exception {

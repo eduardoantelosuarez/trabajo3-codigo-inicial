@@ -27,7 +27,7 @@ public class CreditoTest extends TestCase {
 		Date hoy = new Date();
 		LocalDate fechacaducidad = hoy.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 		fechacaducidad.plusYears(4); // Caduca en 4 años
-		tarjeta = new Credito("1234567890123456", "Fulano de Tal", fechacaducidad, 1000.0, 1, "bbva", 123); // 1000€ de crédito, tarjeta mastercard
+		tarjeta = new Credito(new Tarjeta("1234567890123456", "Fulano de Tal", fechacaducidad), 1000.0, new EntidadEmisora(1, "bbva", 123)); // 1000€ de crédito, tarjeta mastercard
 		tarjeta.setCuenta(cuenta);
 	}
 
@@ -48,7 +48,7 @@ public class CreditoTest extends TestCase {
 			double saldoActualTarjeta = cuenta.getSaldo(tarjeta.mMovimientos);
 			double creditoActual = tarjeta.getCreditoDisponible();
 			
-			double comision = (500 * 0.05 < 3.0 ? 3 : 500 * 0.05);
+			double comision = (500 * 0.05);
 			
 			assertTrue(saldoActualCuenta == saldoAnteriorCuenta + 500 - comision); //comisión 25€
 			assertTrue(saldoActualTarjeta == saldoAnteriorTarjeta + 500);

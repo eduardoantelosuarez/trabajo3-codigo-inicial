@@ -25,7 +25,7 @@ public class DebitoTest extends TestCase {
 		Date hoy = new Date();
 		LocalDate fechacaducidad = hoy.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 		fechacaducidad.plusYears(4); // Caduca en 4 años
-		debito = new Debito("1234567890123456", "Fulano de Tal", fechacaducidad);
+		debito = new Debito(new Tarjeta("1234567890123456", "Fulano de Tal", fechacaducidad));
 		debito.setCuenta(cuenta);
 	}
 
