@@ -1,60 +1,633 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
-  <uml:Model xmi:id="_6gSiEJw2EemA-eWysK7BMQ" name="trabajo3_codigo_inicial2">
-    <eAnnotations xmi:id="_6v9VwJw2EemA-eWysK7BMQ" source="http://ns.yatta.de/umllab">
-      <contents xmi:type="ecore:EAnnotation" xmi:id="_6v9VwZw2EemA-eWysK7BMQ" source="codegen">
-        <details xmi:id="_6v9Vwpw2EemA-eWysK7BMQ" key="codegenDirectory" value="/trabajo3-codigo-inicial/src/main/java"/>
-        <details xmi:id="_7ZbwkJw2EemA-eWysK7BMQ" key="AssociatedSourceCode" value="/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/banco/Credito.java;3525340321/1;/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/banco/Cuenta.java;874731037/1;/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/banco/Debito.java;4094102621/1;/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/banco/EntidadEmisora.java;3424583393/1;/trabajo3-codigo-inicial/src/test/java/etsisi/ems/trabajo3/banco/DebitoTest.java;246539373/1;/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/banco/Tarjeta.java;3344679597/1;/trabajo3-codigo-inicial/src/test/java/etsisi/ems/trabajo3/banco/CreditoTest.java;3523228614/1;/trabajo3-codigo-inicial/src/test/java/etsisi/ems/trabajo3/banco/CuentaTest.java;870676715/1;/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/banco/Movimiento.java;1906123202/1;"/>
+  <uml:Model xmi:id="_GfyC0JxLEemA-eWysK7BMQ" name="trabajo3_codigo_inicial">
+    <eAnnotations xmi:id="_GwpwYJxLEemA-eWysK7BMQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_GwpwYZxLEemA-eWysK7BMQ" source="codegen">
+        <details xmi:id="_GwpwYpxLEemA-eWysK7BMQ" key="codegenDirectory" value="/trabajo3-codigo-inicial/src/main/java"/>
+        <details xmi:id="_HVFTIJxLEemA-eWysK7BMQ" key="AssociatedSourceCode" value="/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/banco/Cuenta.java;3219754742/1;/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/banco/EntidadEmisora.java;3424583393/1;/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/banco/EntidadEmisoraTipo.java;2575109256/1;/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/banco/Movimiento.java;3274005991/1;/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/tarjetas/Credito.java;3151321658/1;/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/tarjetas/Debito.java;4052665092/1;/trabajo3-codigo-inicial/src/main/java/etsisi/ems/trabajo3/tarjetas/Tarjeta.java;772680773/1;/trabajo3-codigo-inicial/src/test/java/etsisi/ems/trabajo3/banco/CuentaTest.java;870676715/1;/trabajo3-codigo-inicial/src/test/java/etsisi/ems/trabajo3/tarjetas/CreditoTest.java;1073728624/1;/trabajo3-codigo-inicial/src/test/java/etsisi/ems/trabajo3/tarjetas/DebitoTest.java;421184192/1;"/>
       </contents>
     </eAnnotations>
-    <elementImport xmi:id="_7Mqf4Jw2EemA-eWysK7BMQ">
+    <elementImport xmi:id="_HM9R4JxLEemA-eWysK7BMQ">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
     </elementImport>
-    <elementImport xmi:id="_7Mqf4Zw2EemA-eWysK7BMQ">
+    <elementImport xmi:id="_HM9R4ZxLEemA-eWysK7BMQ">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
     </elementImport>
-    <elementImport xmi:id="_7Mqf4pw2EemA-eWysK7BMQ">
+    <elementImport xmi:id="_HM9R4pxLEemA-eWysK7BMQ">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
     </elementImport>
-    <elementImport xmi:id="_7Mqf45w2EemA-eWysK7BMQ">
+    <elementImport xmi:id="_HM9R45xLEemA-eWysK7BMQ">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
     </elementImport>
-    <elementImport xmi:id="_7Mqf5Jw2EemA-eWysK7BMQ">
+    <elementImport xmi:id="_HM948JxLEemA-eWysK7BMQ">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
     </elementImport>
-    <elementImport xmi:id="_7Mqf5Zw2EemA-eWysK7BMQ">
+    <elementImport xmi:id="_HM948ZxLEemA-eWysK7BMQ">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
     </elementImport>
-    <elementImport xmi:id="_7MrG8Jw2EemA-eWysK7BMQ">
+    <elementImport xmi:id="_HM948pxLEemA-eWysK7BMQ">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
     </elementImport>
-    <elementImport xmi:id="_7MrG8Zw2EemA-eWysK7BMQ">
+    <elementImport xmi:id="_HM9485xLEemA-eWysK7BMQ">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
     </elementImport>
-    <elementImport xmi:id="_7MruAJw2EemA-eWysK7BMQ">
+    <elementImport xmi:id="_HM949JxLEemA-eWysK7BMQ">
       <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </elementImport>
-    <packagedElement xmi:type="uml:Package" xmi:id="_7LCvQJw2EemA-eWysK7BMQ" name="etsisi">
-      <packagedElement xmi:type="uml:Package" xmi:id="_7LDWUJw2EemA-eWysK7BMQ" name="ems">
-        <packagedElement xmi:type="uml:Package" xmi:id="_7LDWUZw2EemA-eWysK7BMQ" name="trabajo3">
-          <packagedElement xmi:type="uml:Package" xmi:id="_7LL5MJw2EemA-eWysK7BMQ" name="banco">
-            <packagedElement xmi:type="uml:Class" xmi:id="_7MoDoJw2EemA-eWysK7BMQ" name="Credito">
-              <generalization xmi:id="_7QAHwJw2EemA-eWysK7BMQ" general="_7NxTIJw2EemA-eWysK7BMQ"/>
-              <ownedAttribute xmi:id="_7RJXQJw2EemA-eWysK7BMQ" name="mCredito" visibility="protected">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HLy0QJxLEemA-eWysK7BMQ" name="etsisi">
+      <packagedElement xmi:type="uml:Package" xmi:id="_HLzbUJxLEemA-eWysK7BMQ" name="ems">
+        <packagedElement xmi:type="uml:Package" xmi:id="_HLzbUZxLEemA-eWysK7BMQ" name="trabajo3">
+          <packagedElement xmi:type="uml:Package" xmi:id="_HL2eoJxLEemA-eWysK7BMQ" name="banco">
+            <packagedElement xmi:type="uml:Class" xmi:id="_HM8DwJxLEemA-eWysK7BMQ" name="Cuenta">
+              <ownedAttribute xmi:id="_HPr1wJxLEemA-eWysK7BMQ" name="mNumero" visibility="protected">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
               </ownedAttribute>
-              <ownedAttribute xmi:id="_7RKlYJw2EemA-eWysK7BMQ" name="mMovimientos" visibility="protected" type="_7P4L8Zw2EemA-eWysK7BMQ" association="_7SVDAJw2EemA-eWysK7BMQ"/>
-              <ownedAttribute xmi:id="_7RMakJw2EemA-eWysK7BMQ" name="mEntidadEmisora" visibility="private" type="_7NaGwJw2EemA-eWysK7BMQ" association="_7SWRIZw2EemA-eWysK7BMQ"/>
-              <ownedAttribute xmi:id="_7RNBoZw2EemA-eWysK7BMQ" name="mTipo" visibility="private">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <ownedAttribute xmi:id="_HPsc0ZxLEemA-eWysK7BMQ" name="mTitular" visibility="protected">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
               </ownedAttribute>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7Rt_AJw2EemA-eWysK7BMQ" name="Credito" specification="_7P9rgJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7Rt_AZw2EemA-eWysK7BMQ" name="tarjeta" type="_7NxTIJw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7Rt_Apw2EemA-eWysK7BMQ" name="credito">
+              <ownedAttribute xmi:id="_HPtD4ZxLEemA-eWysK7BMQ" name="mMovimientos" visibility="protected" type="_HPAgUZxLEemA-eWysK7BMQ" association="_HQUu8JxLEemA-eWysK7BMQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQBM8JxLEemA-eWysK7BMQ" name="Cuenta" specification="_HM-gAJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQBM8ZxLEemA-eWysK7BMQ" name="numero">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQBM8pxLEemA-eWysK7BMQ" name="titular">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQBM85xLEemA-eWysK7BMQ" type="_HM8DwJxLEemA-eWysK7BMQ" direction="return"/>
+                <language>java</language>
+                <body>mNumero = numero;&#xD;
+		mTitular = titular;&#xD;
+		mMovimientos = new Vector&lt;Movimiento>();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQBM9JxLEemA-eWysK7BMQ" name="nuevoMovimiento" specification="_HM_HE5xLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQBM9ZxLEemA-eWysK7BMQ" name="concepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQBM9pxLEemA-eWysK7BMQ" name="importe">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7Rt_A5w2EemA-eWysK7BMQ" name="entidadEmisora" type="_7NaGwJw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7Rt_BJw2EemA-eWysK7BMQ" type="_7MoDoJw2EemA-eWysK7BMQ" direction="return"/>
+                <language>java</language>
+                <body>Date date = new Date();&#xD;
+		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();&#xD;
+		this.mMovimientos.addElement(new Movimiento(concepto, importe, fecha));&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQBM95xLEemA-eWysK7BMQ" name="ingresar" specification="_HM_uIpxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQBM-JxLEemA-eWysK7BMQ" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>if (x &lt;= 0)&#xD;
+			throw new Exception(&quot;No se puede ingresar una cantidad negativa&quot;);&#xD;
+		&#xD;
+		this.nuevoMovimiento(&quot;Ingreso en efectivo&quot;, x);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQB0AJxLEemA-eWysK7BMQ" name="retirar" specification="_HNAVMJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQB0AZxLEemA-eWysK7BMQ" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>if (x &lt;= 0)&#xD;
+			throw new Exception(&quot;No se puede retirar una cantidad negativa&quot;);&#xD;
+		if (getSaldo() &lt; x)&#xD;
+			throw new Exception(&quot;Saldo insuficiente&quot;);&#xD;
+		&#xD;
+		this.nuevoMovimiento(&quot;Retirada de efectivo&quot;, x * -1);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQB0ApxLEemA-eWysK7BMQ" name="ingresar" specification="_HNA8QJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQB0A5xLEemA-eWysK7BMQ" name="concepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQB0BJxLEemA-eWysK7BMQ" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>if (x &lt;= 0)&#xD;
+			throw new Exception(&quot;No se puede ingresar una cantidad negativa&quot;);&#xD;
+&#xD;
+		this.nuevoMovimiento(concepto, x);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQB0BZxLEemA-eWysK7BMQ" name="retirar" specification="_HNBjUJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQB0BpxLEemA-eWysK7BMQ" name="concepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQB0B5xLEemA-eWysK7BMQ" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>if (x &lt;= 0)&#xD;
+			throw new Exception(&quot;No se puede retirar una cantidad negativa&quot;);&#xD;
+		if (getSaldo() &lt; x)&#xD;
+			throw new Exception(&quot;Saldo insuficiente&quot;);&#xD;
+		&#xD;
+		this.nuevoMovimiento(concepto, x * -1);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQB0CJxLEemA-eWysK7BMQ" name="getSaldo" specification="_HNBjU5xLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQCbEJxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return this.getSaldo(this.mMovimientos);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQCbEZxLEemA-eWysK7BMQ" name="getSaldo" specification="_HPfogJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQCbEpxLEemA-eWysK7BMQ" name="movimientos" type="_HPAgUZxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HQCbE5xLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>double r = 0.0;&#xD;
+		for (int i = 0; i &lt; movimientos.size(); i++) {&#xD;
+			Movimiento m = (Movimiento) movimientos.elementAt(i);&#xD;
+			r += m.getImporte();			&#xD;
+		}&#xD;
+		return r;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQCbFJxLEemA-eWysK7BMQ" name="addMovimiento" specification="_HPBucJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQCbFZxLEemA-eWysK7BMQ" name="m" type="_HNQM0JxLEemA-eWysK7BMQ"/>
+                <language>java</language>
+                <body>mMovimientos.addElement(m);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HM-gAJxLEemA-eWysK7BMQ" name="Cuenta" method="_HQBM8JxLEemA-eWysK7BMQ">
+                <eAnnotations xmi:id="_HM_HEJxLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HM_HEZxLEemA-eWysK7BMQ" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HM-gAZxLEemA-eWysK7BMQ" name="numero">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HM-gApxLEemA-eWysK7BMQ" name="titular">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HM_HEpxLEemA-eWysK7BMQ" type="_HM8DwJxLEemA-eWysK7BMQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HM_HE5xLEemA-eWysK7BMQ" name="nuevoMovimiento" method="_HQBM9JxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HM_uIJxLEemA-eWysK7BMQ" name="concepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HM_uIZxLEemA-eWysK7BMQ" name="importe">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HM_uIpxLEemA-eWysK7BMQ" name="ingresar" method="_HQBM95xLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HM_uI5xLEemA-eWysK7BMQ" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNAVMJxLEemA-eWysK7BMQ" name="retirar" method="_HQB0AJxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNAVMZxLEemA-eWysK7BMQ" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNA8QJxLEemA-eWysK7BMQ" name="ingresar" method="_HQB0ApxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNA8QZxLEemA-eWysK7BMQ" name="concepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HNA8QpxLEemA-eWysK7BMQ" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNBjUJxLEemA-eWysK7BMQ" name="retirar" method="_HQB0BZxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNBjUZxLEemA-eWysK7BMQ" name="concepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HNBjUpxLEemA-eWysK7BMQ" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNBjU5xLEemA-eWysK7BMQ" name="getSaldo" method="_HQB0CJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNCKYJxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HPBucJxLEemA-eWysK7BMQ" name="addMovimiento" method="_HQCbFJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HPBucZxLEemA-eWysK7BMQ" name="m" type="_HNQM0JxLEemA-eWysK7BMQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HPfogJxLEemA-eWysK7BMQ" name="getSaldo" method="_HQCbEZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HPfogZxLEemA-eWysK7BMQ" name="movimientos" type="_HPAgUZxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HPgPkJxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HNDYgJxLEemA-eWysK7BMQ" name="EntidadEmisora">
+              <ownedAttribute xmi:id="_HPu5EJxLEemA-eWysK7BMQ" name="mNombreEntidad" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HPu5EpxLEemA-eWysK7BMQ" name="mMarcaInternacional" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HPvgIZxLEemA-eWysK7BMQ" name="mCCV" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQDCIJxLEemA-eWysK7BMQ" name="EntidadEmisora" specification="_HNFNsJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQDCIZxLEemA-eWysK7BMQ" name="marcaInternacional">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQDCIpxLEemA-eWysK7BMQ" name="nombreEntidad">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQDCI5xLEemA-eWysK7BMQ" name="ccv">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQDCJJxLEemA-eWysK7BMQ" type="_HNDYgJxLEemA-eWysK7BMQ" direction="return"/>
+                <language>java</language>
+                <body>this.mMarcaInternacional = marcaInternacional;&#xD;
+		this.mNombreEntidad = nombreEntidad;&#xD;
+		this.mCCV = ccv;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQDCJZxLEemA-eWysK7BMQ" name="getmNombreEntidad" specification="_HNF0wJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQDCJpxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return mNombreEntidad;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQDCJ5xLEemA-eWysK7BMQ" name="setmNombreEntidad" specification="_HNF0wpxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQDCKJxLEemA-eWysK7BMQ" name="mNombreEntidad">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.mNombreEntidad = mNombreEntidad;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQDCKZxLEemA-eWysK7BMQ" name="getmMarcaInternacional" specification="_HNGb0JxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQDCKpxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return mMarcaInternacional;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQDpMJxLEemA-eWysK7BMQ" name="setmMarcaInternacional" specification="_HNGb0pxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQDpMZxLEemA-eWysK7BMQ" name="mMarcaInternacional">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.mMarcaInternacional = mMarcaInternacional;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQDpMpxLEemA-eWysK7BMQ" name="getmCCV" specification="_HNHC4JxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQDpM5xLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return mCCV;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQDpNJxLEemA-eWysK7BMQ" name="setmCCV" specification="_HNHp8JxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQDpNZxLEemA-eWysK7BMQ" name="mCCV">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.mCCV = mCCV;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HNFNsJxLEemA-eWysK7BMQ" name="EntidadEmisora" method="_HQDCIJxLEemA-eWysK7BMQ">
+                <eAnnotations xmi:id="_HNFNtJxLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HNFNtZxLEemA-eWysK7BMQ" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HNFNsZxLEemA-eWysK7BMQ" name="marcaInternacional">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HNFNspxLEemA-eWysK7BMQ" name="nombreEntidad">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HNFNs5xLEemA-eWysK7BMQ" name="ccv">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HNFNtpxLEemA-eWysK7BMQ" type="_HNDYgJxLEemA-eWysK7BMQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNF0wJxLEemA-eWysK7BMQ" name="getmNombreEntidad" method="_HQDCJZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNF0wZxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNF0wpxLEemA-eWysK7BMQ" name="setmNombreEntidad" method="_HQDCJ5xLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNF0w5xLEemA-eWysK7BMQ" name="mNombreEntidad">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNGb0JxLEemA-eWysK7BMQ" name="getmMarcaInternacional" method="_HQDCKZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNGb0ZxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNGb0pxLEemA-eWysK7BMQ" name="setmMarcaInternacional" method="_HQDpMJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNGb05xLEemA-eWysK7BMQ" name="mMarcaInternacional">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNHC4JxLEemA-eWysK7BMQ" name="getmCCV" method="_HQDpMpxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNHC4ZxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNHp8JxLEemA-eWysK7BMQ" name="setmCCV" method="_HQDpNJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNHp8ZxLEemA-eWysK7BMQ" name="mCCV">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Enumeration" xmi:id="_HNIRAJxLEemA-eWysK7BMQ" name="EntidadEmisoraTipo">
+              <ownedAttribute xmi:id="_HPxVUJxLEemA-eWysK7BMQ" name="mTipo" visibility="private" isLeaf="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HPyjcJxLEemA-eWysK7BMQ" name="mComision" visibility="private" isLeaf="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_HNMicJxLEemA-eWysK7BMQ" name="EntidadEmisoraTipo" visibility="private" method="_HQEQQJxLEemA-eWysK7BMQ">
+                <eAnnotations xmi:id="_HNMic5xLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HNMidJxLEemA-eWysK7BMQ" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HNMicZxLEemA-eWysK7BMQ" name="tipo">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HNMicpxLEemA-eWysK7BMQ" name="comision">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HNNJgJxLEemA-eWysK7BMQ" type="_HNIRAJxLEemA-eWysK7BMQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNNJgZxLEemA-eWysK7BMQ" name="getByTipo" isStatic="true" method="_HQE3UJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNNJgpxLEemA-eWysK7BMQ" name="tipo">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HPExwJxLEemA-eWysK7BMQ" type="_HNIRAJxLEemA-eWysK7BMQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNNwkJxLEemA-eWysK7BMQ" name="getmTipo" method="_HQE3U5xLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNNwkZxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNOXoJxLEemA-eWysK7BMQ" name="getmComision" method="_HQFeYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNOXoZxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedLiteral xmi:id="_HNJfIJxLEemA-eWysK7BMQ" name="MASTERCARD">
+                <specification xmi:type="uml:Expression" xmi:id="_HNJfIZxLEemA-eWysK7BMQ">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_HQP2cJxLEemA-eWysK7BMQ" value="1"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_HQP2cZxLEemA-eWysK7BMQ" value="0.05"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HNJfIpxLEemA-eWysK7BMQ" name="MAESTRO">
+                <specification xmi:type="uml:Expression" xmi:id="_HNKGMJxLEemA-eWysK7BMQ">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_HQP2cpxLEemA-eWysK7BMQ" value="2"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_HQP2c5xLEemA-eWysK7BMQ" value="0.05"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HNKGMZxLEemA-eWysK7BMQ" name="VISA_CLASICA">
+                <specification xmi:type="uml:Expression" xmi:id="_HNKGMpxLEemA-eWysK7BMQ">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_HQP2dJxLEemA-eWysK7BMQ" value="3"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_HQP2dZxLEemA-eWysK7BMQ" value="0.03"/>
+                </specification>
+              </ownedLiteral>
+              <ownedLiteral xmi:id="_HNKGM5xLEemA-eWysK7BMQ" name="VISA_ELECTRON">
+                <specification xmi:type="uml:Expression" xmi:id="_HNKtQJxLEemA-eWysK7BMQ">
+                  <operand xmi:type="uml:LiteralString" xmi:id="_HQQdgJxLEemA-eWysK7BMQ" value="4"/>
+                  <operand xmi:type="uml:LiteralString" xmi:id="_HQQdgZxLEemA-eWysK7BMQ" value="0.02"/>
+                </specification>
+              </ownedLiteral>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HNQM0JxLEemA-eWysK7BMQ" name="Movimiento">
+              <ownedAttribute xmi:id="_HPzKgZxLEemA-eWysK7BMQ" name="mConcepto">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HPzxkZxLEemA-eWysK7BMQ" name="mFecha" visibility="protected" type="_HO9dAJxLEemA-eWysK7BMQ" association="_HQV9EJxLEemA-eWysK7BMQ"/>
+              <ownedAttribute xmi:id="_HP0_sJxLEemA-eWysK7BMQ" name="mImporte" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HP1mwJxLEemA-eWysK7BMQ" name="mLiquidado" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQFeY5xLEemA-eWysK7BMQ" name="Movimiento" specification="_HPir0JxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQFeZJxLEemA-eWysK7BMQ" name="concepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQFeZZxLEemA-eWysK7BMQ" name="importe">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQFeZpxLEemA-eWysK7BMQ" name="fecha" type="_HO9dAJxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HQFeZ5xLEemA-eWysK7BMQ" type="_HNQM0JxLEemA-eWysK7BMQ" direction="return"/>
+                <language>java</language>
+                <body>this.mConcepto = concepto;&#xD;
+		this.mImporte = importe;&#xD;
+		this.mFecha = fecha;&#xD;
+		setLiquidado(false); //lo necesito para los movimientos de las tarjetas de crédito&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQGFcJxLEemA-eWysK7BMQ" name="getImporte" specification="_HNRa8JxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQGFcZxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return mImporte;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQGFcpxLEemA-eWysK7BMQ" name="getConcepto" specification="_HNRa8pxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQGFc5xLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return mConcepto;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQGFdJxLEemA-eWysK7BMQ" name="setConcepto" specification="_HNSCAZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQGFdZxLEemA-eWysK7BMQ" name="newMConcepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>mConcepto = newMConcepto;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQGsgJxLEemA-eWysK7BMQ" name="getFecha" specification="_HNSpEJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQGsgZxLEemA-eWysK7BMQ" type="_HO9dAJxLEemA-eWysK7BMQ" direction="return"/>
+                <language>java</language>
+                <body>return mFecha;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQGsgpxLEemA-eWysK7BMQ" name="setFecha" specification="_HPjS4ZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQGsg5xLEemA-eWysK7BMQ" name="newMFecha" type="_HO9dAJxLEemA-eWysK7BMQ"/>
+                <language>java</language>
+                <body>mFecha = newMFecha;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQGshJxLEemA-eWysK7BMQ" name="setImporte" specification="_HNSpEZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQGshZxLEemA-eWysK7BMQ" name="newMImporte">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>mImporte = newMImporte;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQGshpxLEemA-eWysK7BMQ" name="isLiquidado" specification="_HNTQIZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQGsh5xLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return mLiquidado;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQHTkJxLEemA-eWysK7BMQ" name="setLiquidado" specification="_HNT3MJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQHTkZxLEemA-eWysK7BMQ" name="mliquidado">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.mLiquidado = mliquidado;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HNRa8JxLEemA-eWysK7BMQ" name="getImporte" method="_HQGFcJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNRa8ZxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNRa8pxLEemA-eWysK7BMQ" name="getConcepto" method="_HQGFcpxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNSCAJxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNSCAZxLEemA-eWysK7BMQ" name="setConcepto" method="_HQGFdJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNSCApxLEemA-eWysK7BMQ" name="newMConcepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNSpEJxLEemA-eWysK7BMQ" name="getFecha" method="_HQGsgJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HPjS4JxLEemA-eWysK7BMQ" type="_HO9dAJxLEemA-eWysK7BMQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNSpEZxLEemA-eWysK7BMQ" name="setImporte" method="_HQGshJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNTQIJxLEemA-eWysK7BMQ" name="newMImporte">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNTQIZxLEemA-eWysK7BMQ" name="isLiquidado" method="_HQGshpxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNTQIpxLEemA-eWysK7BMQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNT3MJxLEemA-eWysK7BMQ" name="setLiquidado" method="_HQHTkJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNT3MZxLEemA-eWysK7BMQ" name="mliquidado">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HPir0JxLEemA-eWysK7BMQ" name="Movimiento" method="_HQFeY5xLEemA-eWysK7BMQ">
+                <eAnnotations xmi:id="_HPir1JxLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HPir1ZxLEemA-eWysK7BMQ" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HPir0ZxLEemA-eWysK7BMQ" name="concepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HPir0pxLEemA-eWysK7BMQ" name="importe">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HPir05xLEemA-eWysK7BMQ" name="fecha" type="_HO9dAJxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HPir1pxLEemA-eWysK7BMQ" type="_HNQM0JxLEemA-eWysK7BMQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HPjS4ZxLEemA-eWysK7BMQ" name="setFecha" method="_HQGsgpxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HPj58JxLEemA-eWysK7BMQ" name="newMFecha" type="_HO9dAJxLEemA-eWysK7BMQ"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HNpOYJxLEemA-eWysK7BMQ" name="CuentaTest">
+              <eAnnotations xmi:id="_HNp1cJxLEemA-eWysK7BMQ" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_HNp1cZxLEemA-eWysK7BMQ" source="codegen">
+                  <details xmi:id="_HNp1cpxLEemA-eWysK7BMQ" key="codegenDirectory" value="/trabajo3-codigo-inicial/src/test/java"/>
+                </contents>
+              </eAnnotations>
+              <generalization xmi:id="_HPnkUJxLEemA-eWysK7BMQ" general="_HPS0MZxLEemA-eWysK7BMQ"/>
+              <ownedAttribute xmi:id="_HP8UcJxLEemA-eWysK7BMQ" name="cuenta" visibility="package" type="_HM8DwJxLEemA-eWysK7BMQ" association="_HQaOgZxLEemA-eWysK7BMQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQMMFJxLEemA-eWysK7BMQ" name="CuentaTest" specification="_HNp1c5xLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQMMFZxLEemA-eWysK7BMQ" name="sTestName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQMMFpxLEemA-eWysK7BMQ" type="_HNpOYJxLEemA-eWysK7BMQ" direction="return"/>
+                <language>java</language>
+                <body>super(sTestName);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQMzIJxLEemA-eWysK7BMQ" name="setUp" specification="_HNqchJxLEemA-eWysK7BMQ">
+                <language>java</language>
+                <body>cuenta = new Cuenta(&quot;0001.0002.12.1234567890&quot;, &quot;Fulano de Tal&quot;);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQMzIZxLEemA-eWysK7BMQ" name="testIngresar1000" specification="_HNs4wpxLEemA-eWysK7BMQ">
+                <language>java</language>
+                <body>try {&#xD;
+			cuenta.ingresar(1000);&#xD;
+			assertTrue(cuenta.getSaldo() == 1000.0);&#xD;
+		} catch (Exception e) {&#xD;
+			fail(&quot;No deberia haber fallado&quot;);&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQMzIpxLEemA-eWysK7BMQ" name="testRetirar1000" specification="_HNuG4pxLEemA-eWysK7BMQ">
+                <language>java</language>
+                <body>try {&#xD;
+			cuenta.retirar(1000);&#xD;
+			fail(&quot;No salta excepcion&quot;);&#xD;
+		} catch (Exception e) { }&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQMzI5xLEemA-eWysK7BMQ" name="testIngresoYRetirada" specification="_HNut85xLEemA-eWysK7BMQ">
+                <language>java</language>
+                <body>try {&#xD;
+			cuenta.ingresar(1000.0);&#xD;
+			cuenta.retirar(300.0);&#xD;
+			assertTrue(cuenta.getSaldo() == 700.0);&#xD;
+		} catch (Exception e) {&#xD;
+			fail(&quot;No deberia haber fallado&quot;);&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HNp1c5xLEemA-eWysK7BMQ" name="CuentaTest" method="_HQMMFJxLEemA-eWysK7BMQ">
+                <eAnnotations xmi:id="_HNqcgZxLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HNqcgpxLEemA-eWysK7BMQ" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_HNqcgJxLEemA-eWysK7BMQ" name="sTestName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HNqcg5xLEemA-eWysK7BMQ" type="_HNpOYJxLEemA-eWysK7BMQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNqchJxLEemA-eWysK7BMQ" name="setUp" method="_HQMzIJxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HNsRsJxLEemA-eWysK7BMQ" name="tearDown" raisedException="_HPeaYZxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HNs4wpxLEemA-eWysK7BMQ" name="testIngresar1000" method="_HQMzIZxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HNuG4pxLEemA-eWysK7BMQ" name="testRetirar1000" method="_HQMzIpxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HNut85xLEemA-eWysK7BMQ" name="testIngresoYRetirada" method="_HQMzI5xLEemA-eWysK7BMQ"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HQUu8JxLEemA-eWysK7BMQ" name="" memberEnd="_HQUu8ZxLEemA-eWysK7BMQ _HPtD4ZxLEemA-eWysK7BMQ">
+              <ownedEnd xmi:id="_HQUu8ZxLEemA-eWysK7BMQ" name="" type="_HM8DwJxLEemA-eWysK7BMQ" association="_HQUu8JxLEemA-eWysK7BMQ"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HQV9EJxLEemA-eWysK7BMQ" name="" memberEnd="_HQV9EZxLEemA-eWysK7BMQ _HPzxkZxLEemA-eWysK7BMQ">
+              <ownedEnd xmi:id="_HQV9EZxLEemA-eWysK7BMQ" name="" type="_HNQM0JxLEemA-eWysK7BMQ" association="_HQV9EJxLEemA-eWysK7BMQ"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HQaOgZxLEemA-eWysK7BMQ" name="" memberEnd="_HQaOgpxLEemA-eWysK7BMQ _HP8UcJxLEemA-eWysK7BMQ">
+              <ownedEnd xmi:id="_HQaOgpxLEemA-eWysK7BMQ" name="" type="_HNpOYJxLEemA-eWysK7BMQ" association="_HQaOgZxLEemA-eWysK7BMQ"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_HMWN4JxLEemA-eWysK7BMQ" name="tarjetas">
+            <packagedElement xmi:type="uml:Class" xmi:id="_HNVsYJxLEemA-eWysK7BMQ" name="Credito">
+              <generalization xmi:id="_HPKRUJxLEemA-eWysK7BMQ" general="_HNju0JxLEemA-eWysK7BMQ"/>
+              <ownedAttribute xmi:id="_HP2N0JxLEemA-eWysK7BMQ" name="mCredito" visibility="protected">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_HP204ZxLEemA-eWysK7BMQ" name="mMovimientos" visibility="protected" type="_HPAgUZxLEemA-eWysK7BMQ" association="_HQXLMJxLEemA-eWysK7BMQ"/>
+              <ownedAttribute xmi:id="_HP4qEJxLEemA-eWysK7BMQ" name="mEntidadEmisora" visibility="private" type="_HNDYgJxLEemA-eWysK7BMQ" association="_HQXyQZxLEemA-eWysK7BMQ"/>
+              <ownedAttribute xmi:id="_HP5RIZxLEemA-eWysK7BMQ" name="mTipo" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQHTkpxLEemA-eWysK7BMQ" name="Credito" specification="_HPIcIJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQHTk5xLEemA-eWysK7BMQ" name="tarjeta" type="_HNju0JxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HQHTlJxLEemA-eWysK7BMQ" name="credito">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQHTlZxLEemA-eWysK7BMQ" name="entidadEmisora" type="_HNDYgJxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HQHTlpxLEemA-eWysK7BMQ" type="_HNVsYJxLEemA-eWysK7BMQ" direction="return"/>
                 <language>java</language>
                 <body>super(tarjeta.getmNumero(), tarjeta.getmTitular(), tarjeta.getmFechaDeCaducidad());&#xD;
 		mCredito = credito;&#xD;
@@ -62,13 +635,13 @@
 		this.mEntidadEmisora = entidadEmisora;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7RumEJw2EemA-eWysK7BMQ" name="Credito" specification="_7P-5oJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7RumEZw2EemA-eWysK7BMQ" name="tarjeta" type="_7NxTIJw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7RumEpw2EemA-eWysK7BMQ" name="entidadEmisora" type="_7NaGwJw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7RumE5w2EemA-eWysK7BMQ" name="tipo">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQHTl5xLEemA-eWysK7BMQ" name="Credito" specification="_HPJDMJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQHTmJxLEemA-eWysK7BMQ" name="tarjeta" type="_HNju0JxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HQH6oJxLEemA-eWysK7BMQ" name="entidadEmisora" type="_HNDYgJxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HQH6oZxLEemA-eWysK7BMQ" name="tipo">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7RumFJw2EemA-eWysK7BMQ" type="_7MoDoJw2EemA-eWysK7BMQ" direction="return"/>
+                <ownedParameter xmi:id="_HQH6opxLEemA-eWysK7BMQ" type="_HNVsYJxLEemA-eWysK7BMQ" direction="return"/>
                 <language>java</language>
                 <body>super(tarjeta.getmNumero(), tarjeta.getmTitular(), tarjeta.getmFechaDeCaducidad());&#xD;
 		mTipo = tipo;&#xD;
@@ -77,11 +650,11 @@
 		this.mEntidadEmisora = entidadEmisora;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7RvNIJw2EemA-eWysK7BMQ" name="calcularCredito" specification="_7MuKQJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7RvNIZw2EemA-eWysK7BMQ" name="tipo">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQH6o5xLEemA-eWysK7BMQ" name="calcularCredito" specification="_HNXhkJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQH6pJxLEemA-eWysK7BMQ" name="tipo">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7RvNIpw2EemA-eWysK7BMQ" direction="return">
+                <ownedParameter xmi:id="_HQH6pZxLEemA-eWysK7BMQ" direction="return">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
@@ -103,93 +676,61 @@
 		return credito;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7RvNI5w2EemA-eWysK7BMQ" name="retirar" specification="_7Mv_cJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7RvNJJw2EemA-eWysK7BMQ" name="x">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQH6ppxLEemA-eWysK7BMQ" name="retirar" specification="_HNYIopxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQH6p5xLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
-                <body>double comisiontarifa;&#xD;
-		switch (this.mEntidadEmisora.getmMarcaInternacional()) {&#xD;
-		case 1: //mastercard&#xD;
-			comisiontarifa = 0.05;&#xD;
-			break;	&#xD;
-		case 2: //maestro&#xD;
-			comisiontarifa = 0.05;&#xD;
-			break;	&#xD;
-		case 3: //visa clásica&#xD;
-			comisiontarifa = 0.03;&#xD;
-			break;&#xD;
-		case 4: //visa electrón&#xD;
-			comisiontarifa = 0.02;&#xD;
-			break;&#xD;
-		default:&#xD;
-			comisiontarifa = 0.05;&#xD;
-			break;		&#xD;
-		}&#xD;
+                <body>EntidadEmisoraTipo entidadEmisora = EntidadEmisoraTipo.getByTipo(this.mEntidadEmisora.getmMarcaInternacional());&#xD;
+		double comisionTarifa = entidadEmisora.getmComision();&#xD;
 		&#xD;
 		// Añadimos una comisión de un 5% o 3% o 2%, mínimo de 3 euros.&#xD;
-		double comision = (x * comisiontarifa &lt; 3.0 ? 3 : x * comisiontarifa); 		&#xD;
+		double comision = (x * comisionTarifa &lt; 3.0 ? 3 : x * comisionTarifa); 		&#xD;
 		if (x > getCreditoDisponible())&#xD;
 			throw new Exception(&quot;Crédito insuficiente&quot;);&#xD;
-		Movimiento m = new Movimiento();&#xD;
-		m.setConcepto(&quot;Retirada en cuenta asociada (cajero automático)&quot;);&#xD;
-		m.setImporte(x + comision);&#xD;
-		Date date = new Date();&#xD;
-		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();&#xD;
-		m.setFecha(fecha);&#xD;
-		mMovimientos.addElement(m);&#xD;
+		&#xD;
+		this.addNuevoMovimiento(&quot;Retirada en cuenta asociada (cajero automático)&quot;, x + comision);&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7Rv0MJw2EemA-eWysK7BMQ" name="ingresar" specification="_7MwmgJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7Rv0MZw2EemA-eWysK7BMQ" name="x">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQH6qJxLEemA-eWysK7BMQ" name="ingresar" specification="_HNYvsJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQH6qZxLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>double comision = (x * 0.05 &lt; 3.0 ? 3 : x * 0.05); // Añadimos una comisión de un 5%, mínimo de 3 euros.		&#xD;
 		if (x > getCreditoDisponible())&#xD;
 			throw new Exception(&quot;Crédito insuficiente&quot;);&#xD;
-		Movimiento m = new Movimiento();&#xD;
-		m.setConcepto(&quot;Traspaso desde tarjeta a cuenta&quot;);&#xD;
-		m.setImporte(x);&#xD;
-		Date date = new Date();&#xD;
-		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();&#xD;
-		m.setFecha(fecha);&#xD;
-		mMovimientos.addElement(m);&#xD;
+		&#xD;
+		this.addNuevoMovimiento(&quot;Traspaso desde tarjeta a cuenta&quot;, x);&#xD;
 		&#xD;
 		super.getmCuentaAsociada().ingresar(&quot;Traspaso desde tarjeta a cuenta&quot;, x);&#xD;
 		super.getmCuentaAsociada().retirar(&quot;Comision Traspaso desde tarjeta a cuenta&quot;, comision);&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7Rv0Mpw2EemA-eWysK7BMQ" name="pagoEnEstablecimiento" specification="_7MybsJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7Rv0M5w2EemA-eWysK7BMQ" name="datos">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQIhsJxLEemA-eWysK7BMQ" name="pagoEnEstablecimiento" specification="_HNZWwJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQIhsZxLEemA-eWysK7BMQ" name="datos">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7Rv0NJw2EemA-eWysK7BMQ" name="x">
+                <ownedParameter xmi:id="_HQIhspxLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
-                <body>Movimiento m = new Movimiento();&#xD;
-		m.setConcepto(&quot;Compra a crédito en: &quot; + datos);&#xD;
-		m.setImporte(x);&#xD;
-		Date date = new Date();&#xD;
-		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();&#xD;
-		m.setFecha(fecha);&#xD;
-		mMovimientos.addElement(m);&#xD;
+                <body>this.addNuevoMovimiento(&quot;Compra a crédito en: &quot; + datos, x);&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7RwbQJw2EemA-eWysK7BMQ" name="getCreditoDisponible" specification="_7MzCwJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7RwbQZw2EemA-eWysK7BMQ" direction="return">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQIhs5xLEemA-eWysK7BMQ" name="getCreditoDisponible" specification="_HNZ90JxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQIhtJxLEemA-eWysK7BMQ" direction="return">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>return mCredito - super.getmCuentaAsociada().getSaldo(this.mMovimientos);&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7RxCUJw2EemA-eWysK7BMQ" name="liquidar" specification="_7M0Q4Jw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7RxCUZw2EemA-eWysK7BMQ" name="mes">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQIhtZxLEemA-eWysK7BMQ" name="liquidar" specification="_HNak4JxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQIhtpxLEemA-eWysK7BMQ" name="mes">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7RxCUpw2EemA-eWysK7BMQ" name="anyo">
+                <ownedParameter xmi:id="_HQIht5xLEemA-eWysK7BMQ" name="anyo">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
@@ -202,703 +743,334 @@
 		}&#xD;
 		&#xD;
 		if (r != 0) {&#xD;
-			Movimiento liq = new Movimiento();&#xD;
-			liq.setConcepto(&quot;Liquidación de operaciones tarj. crédito, &quot; + (mes) + &quot; de &quot; + (anyo));&#xD;
-			liq.setImporte(-r);&#xD;
 			Date date = new Date();&#xD;
 			LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();&#xD;
-			liq.setFecha(fecha);&#xD;
-			super.getmCuentaAsociada().addMovimiento(liq);			&#xD;
+			super.getmCuentaAsociada().addMovimiento(new Movimiento(&quot;Liquidación de operaciones tarj. crédito, &quot; + (mes) + &quot; de &quot; + (anyo), -r, fecha));			&#xD;
 		}&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7RxpYJw2EemA-eWysK7BMQ" name="liquidarPlazos" specification="_7M1fAJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7RxpYZw2EemA-eWysK7BMQ" name="mes">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQJIwJxLEemA-eWysK7BMQ" name="addNuevoMovimiento" specification="_HNbL8JxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQJIwZxLEemA-eWysK7BMQ" name="concepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HQJIwpxLEemA-eWysK7BMQ" name="importe">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Date date = new Date();&#xD;
+		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();&#xD;
+		mMovimientos.addElement(new Movimiento(concepto, importe, fecha));&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQJIw5xLEemA-eWysK7BMQ" name="liquidarPlazos" specification="_HNbzAJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQJIxJxLEemA-eWysK7BMQ" name="mes">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7RxpYpw2EemA-eWysK7BMQ" name="anyo">
+                <ownedParameter xmi:id="_HQJIxZxLEemA-eWysK7BMQ" name="anyo">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>//TODO&#xD;
 	</body>
               </ownedBehavior>
-              <ownedOperation xmi:id="_7MuKQJw2EemA-eWysK7BMQ" name="calcularCredito" method="_7RvNIJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7MuKQZw2EemA-eWysK7BMQ" name="tipo">
+              <ownedOperation xmi:id="_HNXhkJxLEemA-eWysK7BMQ" name="calcularCredito" method="_HQH6o5xLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNYIoJxLEemA-eWysK7BMQ" name="tipo">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7MuxUJw2EemA-eWysK7BMQ" direction="return">
+                <ownedParameter xmi:id="_HNYIoZxLEemA-eWysK7BMQ" direction="return">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7Mv_cJw2EemA-eWysK7BMQ" name="retirar" method="_7RvNI5w2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7Mv_cZw2EemA-eWysK7BMQ" name="x">
+              <ownedOperation xmi:id="_HNYIopxLEemA-eWysK7BMQ" name="retirar" method="_HQH6ppxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNYIo5xLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7MwmgJw2EemA-eWysK7BMQ" name="ingresar" method="_7Rv0MJw2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7MxNkJw2EemA-eWysK7BMQ" name="x">
+              <ownedOperation xmi:id="_HNYvsJxLEemA-eWysK7BMQ" name="ingresar" method="_HQH6qJxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNYvsZxLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7MybsJw2EemA-eWysK7BMQ" name="pagoEnEstablecimiento" method="_7Rv0Mpw2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7MybsZw2EemA-eWysK7BMQ" name="datos">
+              <ownedOperation xmi:id="_HNZWwJxLEemA-eWysK7BMQ" name="pagoEnEstablecimiento" method="_HQIhsJxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNZWwZxLEemA-eWysK7BMQ" name="datos">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7Mybspw2EemA-eWysK7BMQ" name="x">
+                <ownedParameter xmi:id="_HNZWwpxLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7MzCwJw2EemA-eWysK7BMQ" name="getCreditoDisponible" method="_7RwbQJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7Mzp0Jw2EemA-eWysK7BMQ" direction="return">
+              <ownedOperation xmi:id="_HNZ90JxLEemA-eWysK7BMQ" name="getCreditoDisponible" method="_HQIhs5xLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNZ90ZxLEemA-eWysK7BMQ" direction="return">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7M0Q4Jw2EemA-eWysK7BMQ" name="liquidar" method="_7RxCUJw2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7M0Q4Zw2EemA-eWysK7BMQ" name="mes">
+              <ownedOperation xmi:id="_HNak4JxLEemA-eWysK7BMQ" name="liquidar" method="_HQIhtZxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNak4ZxLEemA-eWysK7BMQ" name="mes">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7M0Q4pw2EemA-eWysK7BMQ" name="anyo">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7M1fAJw2EemA-eWysK7BMQ" name="liquidarPlazos" method="_7RxpYJw2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7M1fAZw2EemA-eWysK7BMQ" name="mes">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7M1fApw2EemA-eWysK7BMQ" name="anyo">
+                <ownedParameter xmi:id="_HNak4pxLEemA-eWysK7BMQ" name="anyo">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7P9rgJw2EemA-eWysK7BMQ" name="Credito" method="_7Rt_AJw2EemA-eWysK7BMQ">
-                <eAnnotations xmi:id="_7P9rhJw2EemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_7P9rhZw2EemA-eWysK7BMQ" key="create"/>
+              <ownedOperation xmi:id="_HNbL8JxLEemA-eWysK7BMQ" name="addNuevoMovimiento" method="_HQJIwJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNbL8ZxLEemA-eWysK7BMQ" name="concepto">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HNbL8pxLEemA-eWysK7BMQ" name="importe">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HNbzAJxLEemA-eWysK7BMQ" name="liquidarPlazos" method="_HQJIw5xLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNbzAZxLEemA-eWysK7BMQ" name="mes">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_HNbzApxLEemA-eWysK7BMQ" name="anyo">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_HPIcIJxLEemA-eWysK7BMQ" name="Credito" method="_HQHTkpxLEemA-eWysK7BMQ">
+                <eAnnotations xmi:id="_HPIcJJxLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HPIcJZxLEemA-eWysK7BMQ" key="create"/>
                 </eAnnotations>
-                <ownedParameter xmi:id="_7P9rgZw2EemA-eWysK7BMQ" name="tarjeta" type="_7NxTIJw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7P9rgpw2EemA-eWysK7BMQ" name="credito">
+                <ownedParameter xmi:id="_HPIcIZxLEemA-eWysK7BMQ" name="tarjeta" type="_HNju0JxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HPIcIpxLEemA-eWysK7BMQ" name="credito">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7P9rg5w2EemA-eWysK7BMQ" name="entidadEmisora" type="_7NaGwJw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7P-SkJw2EemA-eWysK7BMQ" type="_7MoDoJw2EemA-eWysK7BMQ" direction="return"/>
+                <ownedParameter xmi:id="_HPIcI5xLEemA-eWysK7BMQ" name="entidadEmisora" type="_HNDYgJxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HPIcJpxLEemA-eWysK7BMQ" type="_HNVsYJxLEemA-eWysK7BMQ" direction="return"/>
               </ownedOperation>
-              <ownedOperation xmi:id="_7P-5oJw2EemA-eWysK7BMQ" name="Credito" method="_7RumEJw2EemA-eWysK7BMQ">
-                <eAnnotations xmi:id="_7P-5pJw2EemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_7P-5pZw2EemA-eWysK7BMQ" key="create"/>
+              <ownedOperation xmi:id="_HPJDMJxLEemA-eWysK7BMQ" name="Credito" method="_HQHTl5xLEemA-eWysK7BMQ">
+                <eAnnotations xmi:id="_HPJqQJxLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HPJqQZxLEemA-eWysK7BMQ" key="create"/>
                 </eAnnotations>
-                <ownedParameter xmi:id="_7P-5oZw2EemA-eWysK7BMQ" name="tarjeta" type="_7NxTIJw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7P-5opw2EemA-eWysK7BMQ" name="entidadEmisora" type="_7NaGwJw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7P-5o5w2EemA-eWysK7BMQ" name="tipo">
+                <ownedParameter xmi:id="_HPJDMZxLEemA-eWysK7BMQ" name="tarjeta" type="_HNju0JxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HPJDMpxLEemA-eWysK7BMQ" name="entidadEmisora" type="_HNDYgJxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HPJDM5xLEemA-eWysK7BMQ" name="tipo">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7P_gsJw2EemA-eWysK7BMQ" type="_7MoDoJw2EemA-eWysK7BMQ" direction="return"/>
+                <ownedParameter xmi:id="_HPJqQpxLEemA-eWysK7BMQ" type="_HNVsYJxLEemA-eWysK7BMQ" direction="return"/>
               </ownedOperation>
             </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_7M7loJw2EemA-eWysK7BMQ" name="Cuenta">
-              <ownedAttribute xmi:id="_7ROPwJw2EemA-eWysK7BMQ" name="mNumero" visibility="protected">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_7RPd4Jw2EemA-eWysK7BMQ" name="mTitular" visibility="protected">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_7RQE8Zw2EemA-eWysK7BMQ" name="mMovimientos" visibility="protected" type="_7P4L8Zw2EemA-eWysK7BMQ" association="_7SXfQZw2EemA-eWysK7BMQ"/>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7RzekJw2EemA-eWysK7BMQ" name="Cuenta" specification="_7M9a0Jw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7RzekZw2EemA-eWysK7BMQ" name="numero">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7Rzekpw2EemA-eWysK7BMQ" name="titular">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7Rzek5w2EemA-eWysK7BMQ" type="_7M7loJw2EemA-eWysK7BMQ" direction="return"/>
-                <language>java</language>
-                <body>mNumero = numero;&#xD;
-		mTitular = titular;&#xD;
-		mMovimientos = new Vector&lt;Movimiento>();&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R0FoJw2EemA-eWysK7BMQ" name="nuevoMovimiento" specification="_7M-o8Jw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R0FoZw2EemA-eWysK7BMQ" name="concepto">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7R0Fopw2EemA-eWysK7BMQ" name="importe">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>Movimiento m = new Movimiento();&#xD;
-		m.setConcepto(concepto);&#xD;
-		m.setImporte(importe);&#xD;
-		Date date = new Date();&#xD;
-		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();&#xD;
-		m.setFecha(fecha);&#xD;
-		this.mMovimientos.addElement(m);&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R0ssJw2EemA-eWysK7BMQ" name="ingresar" specification="_7M_QAJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R0ssZw2EemA-eWysK7BMQ" name="x">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>if (x &lt;= 0)&#xD;
-			throw new Exception(&quot;No se puede ingresar una cantidad negativa&quot;);&#xD;
-		&#xD;
-		this.nuevoMovimiento(&quot;Ingreso en efectivo&quot;, x);&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R0sspw2EemA-eWysK7BMQ" name="retirar" specification="_7NAeIJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R0ss5w2EemA-eWysK7BMQ" name="x">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>if (x &lt;= 0)&#xD;
-			throw new Exception(&quot;No se puede retirar una cantidad negativa&quot;);&#xD;
-		if (getSaldo() &lt; x)&#xD;
-			throw new Exception(&quot;Saldo insuficiente&quot;);&#xD;
-		&#xD;
-		this.nuevoMovimiento(&quot;Retirada de efectivo&quot;, x * -1);&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R0stJw2EemA-eWysK7BMQ" name="ingresar" specification="_7NCTUJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R0stZw2EemA-eWysK7BMQ" name="concepto">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7R0stpw2EemA-eWysK7BMQ" name="x">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>if (x &lt;= 0)&#xD;
-			throw new Exception(&quot;No se puede ingresar una cantidad negativa&quot;);&#xD;
-&#xD;
-		this.nuevoMovimiento(concepto, x);&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R1TwJw2EemA-eWysK7BMQ" name="retirar" specification="_7NDhcJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R1TwZw2EemA-eWysK7BMQ" name="concepto">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7R1Twpw2EemA-eWysK7BMQ" name="x">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>if (x &lt;= 0)&#xD;
-			throw new Exception(&quot;No se puede retirar una cantidad negativa&quot;);&#xD;
-		if (getSaldo() &lt; x)&#xD;
-			throw new Exception(&quot;Saldo insuficiente&quot;);&#xD;
-		&#xD;
-		this.nuevoMovimiento(concepto, x * -1);&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R1Tw5w2EemA-eWysK7BMQ" name="getSaldo" specification="_7NGkwJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R1TxJw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>return this.getSaldo(this.mMovimientos);&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R160Jw2EemA-eWysK7BMQ" name="getSaldo" specification="_7Q5foJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R160Zw2EemA-eWysK7BMQ" name="movimientos" type="_7P4L8Zw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7R160pw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>double r = 0.0;&#xD;
-		for (int i = 0; i &lt; movimientos.size(); i++) {&#xD;
-			Movimiento m = (Movimiento) movimientos.elementAt(i);&#xD;
-			r += m.getImporte();			&#xD;
-		}&#xD;
-		return r;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R1605w2EemA-eWysK7BMQ" name="addMovimiento" specification="_7QEZMJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R161Jw2EemA-eWysK7BMQ" name="m" type="_7Ofr4Jw2EemA-eWysK7BMQ"/>
-                <language>java</language>
-                <body>mMovimientos.addElement(m);&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedOperation xmi:id="_7M9a0Jw2EemA-eWysK7BMQ" name="Cuenta" method="_7RzekJw2EemA-eWysK7BMQ">
-                <eAnnotations xmi:id="_7M-B4Jw2EemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_7M-B4Zw2EemA-eWysK7BMQ" key="create"/>
-                </eAnnotations>
-                <ownedParameter xmi:id="_7M9a0Zw2EemA-eWysK7BMQ" name="numero">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7M9a0pw2EemA-eWysK7BMQ" name="titular">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7M-B4pw2EemA-eWysK7BMQ" type="_7M7loJw2EemA-eWysK7BMQ" direction="return"/>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7M-o8Jw2EemA-eWysK7BMQ" name="nuevoMovimiento" method="_7R0FoJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7M-o8Zw2EemA-eWysK7BMQ" name="concepto">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7M-o8pw2EemA-eWysK7BMQ" name="importe">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7M_QAJw2EemA-eWysK7BMQ" name="ingresar" method="_7R0ssJw2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7M_3EJw2EemA-eWysK7BMQ" name="x">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7NAeIJw2EemA-eWysK7BMQ" name="retirar" method="_7R0sspw2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NBFMJw2EemA-eWysK7BMQ" name="x">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7NCTUJw2EemA-eWysK7BMQ" name="ingresar" method="_7R0stJw2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NCTUZw2EemA-eWysK7BMQ" name="concepto">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7NCTUpw2EemA-eWysK7BMQ" name="x">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7NDhcJw2EemA-eWysK7BMQ" name="retirar" method="_7R1TwJw2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NDhcZw2EemA-eWysK7BMQ" name="concepto">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7NEIgJw2EemA-eWysK7BMQ" name="x">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7NGkwJw2EemA-eWysK7BMQ" name="getSaldo" method="_7R1Tw5w2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NHL0Jw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7QEZMJw2EemA-eWysK7BMQ" name="addMovimiento" method="_7R1605w2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7QFAQJw2EemA-eWysK7BMQ" name="m" type="_7Ofr4Jw2EemA-eWysK7BMQ"/>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7Q5foJw2EemA-eWysK7BMQ" name="getSaldo" method="_7R160Jw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7Q5foZw2EemA-eWysK7BMQ" name="movimientos" type="_7P4L8Zw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7Q6GsJw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-              </ownedOperation>
-            </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_7NMEUJw2EemA-eWysK7BMQ" name="Debito">
-              <generalization xmi:id="_7QJRsJw2EemA-eWysK7BMQ" general="_7NxTIJw2EemA-eWysK7BMQ"/>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R3I8Jw2EemA-eWysK7BMQ" name="Debito" specification="_7QIqoJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R3I8Zw2EemA-eWysK7BMQ" name="tarjeta" type="_7NxTIJw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7R3I8pw2EemA-eWysK7BMQ" type="_7NMEUJw2EemA-eWysK7BMQ" direction="return"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HNfdYJxLEemA-eWysK7BMQ" name="Debito">
+              <generalization xmi:id="_HPMtkJxLEemA-eWysK7BMQ" general="_HNju0JxLEemA-eWysK7BMQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQJIxpxLEemA-eWysK7BMQ" name="Debito" specification="_HPMGgJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQJIx5xLEemA-eWysK7BMQ" name="tarjeta" type="_HNju0JxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HQJIyJxLEemA-eWysK7BMQ" type="_HNfdYJxLEemA-eWysK7BMQ" direction="return"/>
                 <language>java</language>
                 <body>super(tarjeta.getmNumero(), tarjeta.getmTitular(), tarjeta.getmFechaDeCaducidad());&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R3I85w2EemA-eWysK7BMQ" name="retirar" specification="_7NN5gJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R3I9Jw2EemA-eWysK7BMQ" name="x">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQJv0JxLEemA-eWysK7BMQ" name="retirar" specification="_HNgrgJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQJv0ZxLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>super.getmCuentaAsociada().retirar(&quot;Retirada en cajero automático&quot;, x);&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R3wAJw2EemA-eWysK7BMQ" name="ingresar" specification="_7NPHoJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R3wAZw2EemA-eWysK7BMQ" name="x">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQJv0pxLEemA-eWysK7BMQ" name="ingresar" specification="_HNhSkJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQJv05xLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>super.getmCuentaAsociada().ingresar(&quot;Ingreso en cajero automático&quot;, x);&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R3wApw2EemA-eWysK7BMQ" name="pagoEnEstablecimiento" specification="_7NTZEJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R3wA5w2EemA-eWysK7BMQ" name="datos">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQJv1JxLEemA-eWysK7BMQ" name="pagoEnEstablecimiento" specification="_HNh5oJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQJv1ZxLEemA-eWysK7BMQ" name="datos">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7R3wBJw2EemA-eWysK7BMQ" name="x">
+                <ownedParameter xmi:id="_HQJv1pxLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>super.getmCuentaAsociada().retirar(&quot;Compra en :&quot; + datos, x);&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R4XEJw2EemA-eWysK7BMQ" name="getSaldo" specification="_7NUnMJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R4XEZw2EemA-eWysK7BMQ" direction="return">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQKW4JxLEemA-eWysK7BMQ" name="getSaldo" specification="_HNigsJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQKW4ZxLEemA-eWysK7BMQ" direction="return">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>return super.getmCuentaAsociada().getSaldo();&#xD;
 	</body>
               </ownedBehavior>
-              <ownedOperation xmi:id="_7NN5gJw2EemA-eWysK7BMQ" name="retirar" method="_7R3I85w2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NOgkJw2EemA-eWysK7BMQ" name="x">
+              <ownedOperation xmi:id="_HNgrgJxLEemA-eWysK7BMQ" name="retirar" method="_HQJv0JxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNgrgZxLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7NPHoJw2EemA-eWysK7BMQ" name="ingresar" method="_7R3wAJw2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NPHoZw2EemA-eWysK7BMQ" name="x">
+              <ownedOperation xmi:id="_HNhSkJxLEemA-eWysK7BMQ" name="ingresar" method="_HQJv0pxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNhSkZxLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7NTZEJw2EemA-eWysK7BMQ" name="pagoEnEstablecimiento" method="_7R3wApw2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NTZEZw2EemA-eWysK7BMQ" name="datos">
+              <ownedOperation xmi:id="_HNh5oJxLEemA-eWysK7BMQ" name="pagoEnEstablecimiento" method="_HQJv1JxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNh5oZxLEemA-eWysK7BMQ" name="datos">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7NUAIJw2EemA-eWysK7BMQ" name="x">
+                <ownedParameter xmi:id="_HNh5opxLEemA-eWysK7BMQ" name="x">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7NUnMJw2EemA-eWysK7BMQ" name="getSaldo" method="_7R4XEJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NUnMZw2EemA-eWysK7BMQ" direction="return">
+              <ownedOperation xmi:id="_HNigsJxLEemA-eWysK7BMQ" name="getSaldo" method="_HQKW4JxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNigsZxLEemA-eWysK7BMQ" direction="return">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7QIqoJw2EemA-eWysK7BMQ" name="Debito" method="_7R3I8Jw2EemA-eWysK7BMQ">
-                <eAnnotations xmi:id="_7QIqopw2EemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_7QIqo5w2EemA-eWysK7BMQ" key="create"/>
+              <ownedOperation xmi:id="_HPMGgJxLEemA-eWysK7BMQ" name="Debito" method="_HQJIxpxLEemA-eWysK7BMQ">
+                <eAnnotations xmi:id="_HPMGgpxLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HPMGg5xLEemA-eWysK7BMQ" key="create"/>
                 </eAnnotations>
-                <ownedParameter xmi:id="_7QIqoZw2EemA-eWysK7BMQ" name="tarjeta" type="_7NxTIJw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7QIqpJw2EemA-eWysK7BMQ" type="_7NMEUJw2EemA-eWysK7BMQ" direction="return"/>
+                <ownedParameter xmi:id="_HPMGgZxLEemA-eWysK7BMQ" name="tarjeta" type="_HNju0JxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HPMGhJxLEemA-eWysK7BMQ" type="_HNfdYJxLEemA-eWysK7BMQ" direction="return"/>
               </ownedOperation>
             </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_7NaGwJw2EemA-eWysK7BMQ" name="EntidadEmisora">
-              <ownedAttribute xmi:id="_7RTIQJw2EemA-eWysK7BMQ" name="mNombreEntidad" visibility="private">
+            <packagedElement xmi:type="uml:Class" xmi:id="_HNju0JxLEemA-eWysK7BMQ" name="Tarjeta">
+              <ownedAttribute xmi:id="_HP54MZxLEemA-eWysK7BMQ" name="mCuentaAsociada" visibility="private" type="_HM8DwJxLEemA-eWysK7BMQ" association="_HQZAYZxLEemA-eWysK7BMQ"/>
+              <ownedAttribute xmi:id="_HP6fQZxLEemA-eWysK7BMQ" name="mNumero" visibility="private">
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
               </ownedAttribute>
-              <ownedAttribute xmi:id="_7RTvUZw2EemA-eWysK7BMQ" name="mMarcaInternacional" visibility="private">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_7RU9cJw2EemA-eWysK7BMQ" name="mCCV" visibility="private">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-              </ownedAttribute>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R4XEpw2EemA-eWysK7BMQ" name="EntidadEmisora" specification="_7Nb78Jw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R4XE5w2EemA-eWysK7BMQ" name="marcaInternacional">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7R4XFJw2EemA-eWysK7BMQ" name="nombreEntidad">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7R4XFZw2EemA-eWysK7BMQ" name="ccv">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7R4XFpw2EemA-eWysK7BMQ" type="_7NaGwJw2EemA-eWysK7BMQ" direction="return"/>
-                <language>java</language>
-                <body>this.mMarcaInternacional = marcaInternacional;&#xD;
-		this.mNombreEntidad = nombreEntidad;&#xD;
-		this.mCCV = ccv;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R4-IJw2EemA-eWysK7BMQ" name="getmNombreEntidad" specification="_7NdKEJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R4-IZw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>return mNombreEntidad;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R4-Ipw2EemA-eWysK7BMQ" name="setmNombreEntidad" specification="_7NeYMJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R4-I5w2EemA-eWysK7BMQ" name="mNombreEntidad">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>this.mNombreEntidad = mNombreEntidad;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R5lMJw2EemA-eWysK7BMQ" name="getmMarcaInternacional" specification="_7Ne_QJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R5lMZw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>return mMarcaInternacional;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R5lMpw2EemA-eWysK7BMQ" name="setmMarcaInternacional" specification="_7NfmUJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R5lM5w2EemA-eWysK7BMQ" name="mMarcaInternacional">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>this.mMarcaInternacional = mMarcaInternacional;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R6MQJw2EemA-eWysK7BMQ" name="getmCCV" specification="_7NgNYJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R6MQZw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>return mCCV;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R6MQpw2EemA-eWysK7BMQ" name="setmCCV" specification="_7Ng0cJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R6MQ5w2EemA-eWysK7BMQ" name="mCCV">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>this.mCCV = mCCV;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedOperation xmi:id="_7Nb78Jw2EemA-eWysK7BMQ" name="EntidadEmisora" method="_7R4XEpw2EemA-eWysK7BMQ">
-                <eAnnotations xmi:id="_7NcjAZw2EemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_7NcjApw2EemA-eWysK7BMQ" key="create"/>
-                </eAnnotations>
-                <ownedParameter xmi:id="_7Nb78Zw2EemA-eWysK7BMQ" name="marcaInternacional">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7Nb78pw2EemA-eWysK7BMQ" name="nombreEntidad">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7NcjAJw2EemA-eWysK7BMQ" name="ccv">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7NcjA5w2EemA-eWysK7BMQ" type="_7NaGwJw2EemA-eWysK7BMQ" direction="return"/>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7NdKEJw2EemA-eWysK7BMQ" name="getmNombreEntidad" method="_7R4-IJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NdxIJw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7NeYMJw2EemA-eWysK7BMQ" name="setmNombreEntidad" method="_7R4-Ipw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NeYMZw2EemA-eWysK7BMQ" name="mNombreEntidad">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7Ne_QJw2EemA-eWysK7BMQ" name="getmMarcaInternacional" method="_7R5lMJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7Ne_QZw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7NfmUJw2EemA-eWysK7BMQ" name="setmMarcaInternacional" method="_7R5lMpw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NfmUZw2EemA-eWysK7BMQ" name="mMarcaInternacional">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7NgNYJw2EemA-eWysK7BMQ" name="getmCCV" method="_7R6MQJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7NgNYZw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7Ng0cJw2EemA-eWysK7BMQ" name="setmCCV" method="_7R6MQpw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7Ng0cZw2EemA-eWysK7BMQ" name="mCCV">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-                </ownedParameter>
-              </ownedOperation>
-            </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_7NipoJw2EemA-eWysK7BMQ" name="DebitoTest">
-              <eAnnotations xmi:id="_7NjQsJw2EemA-eWysK7BMQ" source="http://ns.yatta.de/umllab">
-                <contents xmi:type="ecore:EAnnotation" xmi:id="_7NjQsZw2EemA-eWysK7BMQ" source="codegen">
-                  <details xmi:id="_7Nj3wJw2EemA-eWysK7BMQ" key="codegenDirectory" value="/trabajo3-codigo-inicial/src/test/java"/>
-                </contents>
-              </eAnnotations>
-              <generalization xmi:id="_7Q9xEJw2EemA-eWysK7BMQ" general="_7QP_YZw2EemA-eWysK7BMQ"/>
-              <ownedAttribute xmi:id="_7RWLkJw2EemA-eWysK7BMQ" name="debito" visibility="package" type="_7NMEUJw2EemA-eWysK7BMQ" association="_7SYtYZw2EemA-eWysK7BMQ"/>
-              <ownedAttribute xmi:id="_7RWyoZw2EemA-eWysK7BMQ" name="cuenta" visibility="package" type="_7M7loJw2EemA-eWysK7BMQ" association="_7SZ7gZw2EemA-eWysK7BMQ"/>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R6zUJw2EemA-eWysK7BMQ" name="DebitoTest" specification="_7Nke0Jw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R6zUZw2EemA-eWysK7BMQ" name="sTestName">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7R6zUpw2EemA-eWysK7BMQ" type="_7NipoJw2EemA-eWysK7BMQ" direction="return"/>
-                <language>java</language>
-                <body>super(sTestName);&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R6zU5w2EemA-eWysK7BMQ" name="setUp" specification="_7Nls8Jw2EemA-eWysK7BMQ">
-                <language>java</language>
-                <body>cuenta = new Cuenta(&quot;0001.0002.12.1234567890&quot;, &quot;Fulano de Tal&quot;);&#xD;
-		cuenta.ingresar(1000.0);&#xD;
-		Date hoy = new Date();&#xD;
-		LocalDate fechacaducidad = hoy.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();&#xD;
-		fechacaducidad.plusYears(4); // Caduca en 4 años&#xD;
-		debito = new Debito(new Tarjeta(&quot;1234567890123456&quot;, &quot;Fulano de Tal&quot;, fechacaducidad));&#xD;
-		debito.setCuenta(cuenta);&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R7aYJw2EemA-eWysK7BMQ" name="testIngresar100" specification="_7Np-YJw2EemA-eWysK7BMQ">
-                <language>java</language>
-                <body>try {&#xD;
-			double saldoAnteriorCuenta = cuenta.getSaldo();		&#xD;
-			debito.ingresar(100);&#xD;
-			double saldoActualCuenta = cuenta.getSaldo();&#xD;
-			assertTrue(debito.getSaldo() == cuenta.getSaldo());&#xD;
-			assertTrue(saldoAnteriorCuenta + 100 == saldoActualCuenta);			&#xD;
-		} catch (Exception e) {&#xD;
-			fail(&quot;No deberia haber fallado&quot;);&#xD;
-		}&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R7aYZw2EemA-eWysK7BMQ" name="testRetirar1000" specification="_7NrMgpw2EemA-eWysK7BMQ">
-                <language>java</language>
-                <body>try {&#xD;
-			double saldoAnteriorCuenta = cuenta.getSaldo();		&#xD;
-			debito.retirar(1000.0);&#xD;
-			double saldoActualCuenta = cuenta.getSaldo();&#xD;
-			assertTrue(debito.getSaldo() == cuenta.getSaldo());&#xD;
-			assertTrue(saldoAnteriorCuenta -1000 == saldoActualCuenta);			&#xD;
-		} catch (Exception e) {&#xD;
-			fail(&quot;No deberia haber fallado&quot;);&#xD;
-		}&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R7aYpw2EemA-eWysK7BMQ" name="testpagoEnEstablecimiento100" specification="_7NtowJw2EemA-eWysK7BMQ">
-                <language>java</language>
-                <body>try {&#xD;
-			double saldoAnteriorCuenta = cuenta.getSaldo();		&#xD;
-			debito.pagoEnEstablecimiento(&quot;Mango&quot;, 100);&#xD;
-			double saldoActualCuenta = cuenta.getSaldo();&#xD;
-			assertTrue(debito.getSaldo() == cuenta.getSaldo());&#xD;
-			assertTrue(saldoAnteriorCuenta- 100 == saldoActualCuenta);&#xD;
-		} catch (Exception e) {&#xD;
-			fail(&quot;No deberia haber fallado&quot;);&#xD;
-		}&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedOperation xmi:id="_7Nke0Jw2EemA-eWysK7BMQ" name="DebitoTest" method="_7R6zUJw2EemA-eWysK7BMQ">
-                <eAnnotations xmi:id="_7NlF4Jw2EemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_7NlF4Zw2EemA-eWysK7BMQ" key="create"/>
-                </eAnnotations>
-                <ownedParameter xmi:id="_7Nke0Zw2EemA-eWysK7BMQ" name="sTestName">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <ownedParameter xmi:id="_7NlF4pw2EemA-eWysK7BMQ" type="_7NipoJw2EemA-eWysK7BMQ" direction="return"/>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7Nls8Jw2EemA-eWysK7BMQ" name="setUp" method="_7R6zU5w2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7NoJMJw2EemA-eWysK7BMQ" name="tearDown" raisedException="_7Q0nIZw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7Np-YJw2EemA-eWysK7BMQ" name="testIngresar100" method="_7R7aYJw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7NrMgpw2EemA-eWysK7BMQ" name="testRetirar1000" method="_7R7aYZw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7NtowJw2EemA-eWysK7BMQ" name="testpagoEnEstablecimiento100" method="_7R7aYpw2EemA-eWysK7BMQ"/>
-            </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_7NxTIJw2EemA-eWysK7BMQ" name="Tarjeta">
-              <ownedAttribute xmi:id="_7RYAwJw2EemA-eWysK7BMQ" name="mCuentaAsociada" visibility="private" type="_7M7loJw2EemA-eWysK7BMQ" association="_7SbwsJw2EemA-eWysK7BMQ"/>
-              <ownedAttribute xmi:id="_7RZO4Jw2EemA-eWysK7BMQ" name="mNumero" visibility="private">
+              <ownedAttribute xmi:id="_HP7tYJxLEemA-eWysK7BMQ" name="mFechaDeCaducidad" visibility="private" type="_HO9dAJxLEemA-eWysK7BMQ" association="_HQZncZxLEemA-eWysK7BMQ"/>
+              <ownedAttribute xmi:id="_HQQdgpxLEemA-eWysK7BMQ" name="mTitular" visibility="private">
                 <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
               </ownedAttribute>
-              <ownedAttribute xmi:id="_7RadAJw2EemA-eWysK7BMQ" name="mFechaDeCaducidad" visibility="private" type="_7P6BIZw2EemA-eWysK7BMQ" association="_7SeM8Zw2EemA-eWysK7BMQ"/>
-              <ownedAttribute xmi:id="_7SL5EJw2EemA-eWysK7BMQ" name="mTitular" visibility="private">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedAttribute>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R8ogJw2EemA-eWysK7BMQ" name="Tarjeta" specification="_7Q-_MJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R8ogZw2EemA-eWysK7BMQ" name="numero">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQK98JxLEemA-eWysK7BMQ" name="Tarjeta" specification="_HPlvIJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQK98ZxLEemA-eWysK7BMQ" name="numero">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7R8ogpw2EemA-eWysK7BMQ" name="titular">
+                <ownedParameter xmi:id="_HQK98pxLEemA-eWysK7BMQ" name="titular">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7R8og5w2EemA-eWysK7BMQ" name="fechaCaducidad" type="_7P6BIZw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7R8ohJw2EemA-eWysK7BMQ" type="_7NxTIJw2EemA-eWysK7BMQ" direction="return"/>
+                <ownedParameter xmi:id="_HQK985xLEemA-eWysK7BMQ" name="fechaCaducidad" type="_HO9dAJxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HQK99JxLEemA-eWysK7BMQ" type="_HNju0JxLEemA-eWysK7BMQ" direction="return"/>
                 <language>java</language>
                 <body>mNumero = numero;&#xD;
 		mTitular = titular;&#xD;
 		mFechaDeCaducidad = fechaCaducidad;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R8ohZw2EemA-eWysK7BMQ" name="getmCuentaAsociada" specification="_7NzIUJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R8ohpw2EemA-eWysK7BMQ" type="_7M7loJw2EemA-eWysK7BMQ" direction="return"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQK99ZxLEemA-eWysK7BMQ" name="getmCuentaAsociada" specification="_HNk88JxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQK99pxLEemA-eWysK7BMQ" type="_HM8DwJxLEemA-eWysK7BMQ" direction="return"/>
                 <language>java</language>
                 <body>return mCuentaAsociada;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R9PkJw2EemA-eWysK7BMQ" name="setCuenta" specification="_7QXUIJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R9PkZw2EemA-eWysK7BMQ" name="c" type="_7M7loJw2EemA-eWysK7BMQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQK995xLEemA-eWysK7BMQ" name="setCuenta" specification="_HPOiwZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQK9-JxLEemA-eWysK7BMQ" name="c" type="_HM8DwJxLEemA-eWysK7BMQ"/>
                 <language>java</language>
                 <body>this.mCuentaAsociada = c;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R9Pkpw2EemA-eWysK7BMQ" name="getmNumero" specification="_7N0WcJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R9Pk5w2EemA-eWysK7BMQ" direction="return">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQLlAJxLEemA-eWysK7BMQ" name="getmNumero" specification="_HNlkAJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQLlAZxLEemA-eWysK7BMQ" direction="return">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>return mNumero;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R92oJw2EemA-eWysK7BMQ" name="setmNumero" specification="_7N09gJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R92oZw2EemA-eWysK7BMQ" name="mNumero">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQLlApxLEemA-eWysK7BMQ" name="setmNumero" specification="_HNlkApxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQLlA5xLEemA-eWysK7BMQ" name="mNumero">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>this.mNumero = mNumero;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R92opw2EemA-eWysK7BMQ" name="getmTitular" specification="_7N09gpw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R92o5w2EemA-eWysK7BMQ" direction="return">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQLlBJxLEemA-eWysK7BMQ" name="getmTitular" specification="_HNmLEJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQLlBZxLEemA-eWysK7BMQ" direction="return">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>return mTitular;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R-dsJw2EemA-eWysK7BMQ" name="setmTitular" specification="_7N2LoJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R-dsZw2EemA-eWysK7BMQ" name="mTitular">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQLlBpxLEemA-eWysK7BMQ" name="setmTitular" specification="_HNmyIJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQLlB5xLEemA-eWysK7BMQ" name="mTitular">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>this.mTitular = mTitular;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R-dspw2EemA-eWysK7BMQ" name="getmFechaDeCaducidad" specification="_7N2ysJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R-ds5w2EemA-eWysK7BMQ" type="_7P6BIZw2EemA-eWysK7BMQ" direction="return"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQMMEJxLEemA-eWysK7BMQ" name="getmFechaDeCaducidad" specification="_HNmyIpxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQMMEZxLEemA-eWysK7BMQ" type="_HO9dAJxLEemA-eWysK7BMQ" direction="return"/>
                 <language>java</language>
                 <body>return mFechaDeCaducidad;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R_EwJw2EemA-eWysK7BMQ" name="setmFechaDeCaducidad" specification="_7RA0YZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R_EwZw2EemA-eWysK7BMQ" name="mFechaDeCaducidad" type="_7P6BIZw2EemA-eWysK7BMQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQMMEpxLEemA-eWysK7BMQ" name="setmFechaDeCaducidad" specification="_HPm9QJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQMME5xLEemA-eWysK7BMQ" name="mFechaDeCaducidad" type="_HO9dAJxLEemA-eWysK7BMQ"/>
                 <language>java</language>
                 <body>this.mFechaDeCaducidad = mFechaDeCaducidad;&#xD;
 	</body>
               </ownedBehavior>
-              <ownedOperation xmi:id="_7NzIUJw2EemA-eWysK7BMQ" name="getmCuentaAsociada" method="_7R8ohZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7QTpwJw2EemA-eWysK7BMQ" type="_7M7loJw2EemA-eWysK7BMQ" direction="return"/>
+              <ownedOperation xmi:id="_HNk88JxLEemA-eWysK7BMQ" name="getmCuentaAsociada" method="_HQK99ZxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HPOiwJxLEemA-eWysK7BMQ" type="_HM8DwJxLEemA-eWysK7BMQ" direction="return"/>
               </ownedOperation>
-              <ownedOperation xmi:id="_7N0WcJw2EemA-eWysK7BMQ" name="getmNumero" method="_7R9Pkpw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7N0WcZw2EemA-eWysK7BMQ" direction="return">
+              <ownedOperation xmi:id="_HNlkAJxLEemA-eWysK7BMQ" name="getmNumero" method="_HQLlAJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNlkAZxLEemA-eWysK7BMQ" direction="return">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7N09gJw2EemA-eWysK7BMQ" name="setmNumero" method="_7R92oJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7N09gZw2EemA-eWysK7BMQ" name="mNumero">
+              <ownedOperation xmi:id="_HNlkApxLEemA-eWysK7BMQ" name="setmNumero" method="_HQLlApxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNlkA5xLEemA-eWysK7BMQ" name="mNumero">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7N09gpw2EemA-eWysK7BMQ" name="getmTitular" method="_7R92opw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7N1kkJw2EemA-eWysK7BMQ" direction="return">
+              <ownedOperation xmi:id="_HNmLEJxLEemA-eWysK7BMQ" name="getmTitular" method="_HQLlBJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNmLEZxLEemA-eWysK7BMQ" direction="return">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7N2LoJw2EemA-eWysK7BMQ" name="setmTitular" method="_7R-dsJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7N2LoZw2EemA-eWysK7BMQ" name="mTitular">
+              <ownedOperation xmi:id="_HNmyIJxLEemA-eWysK7BMQ" name="setmTitular" method="_HQLlBpxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HNmyIZxLEemA-eWysK7BMQ" name="mTitular">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
               </ownedOperation>
-              <ownedOperation xmi:id="_7N2ysJw2EemA-eWysK7BMQ" name="getmFechaDeCaducidad" method="_7R-dspw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7RA0YJw2EemA-eWysK7BMQ" type="_7P6BIZw2EemA-eWysK7BMQ" direction="return"/>
+              <ownedOperation xmi:id="_HNmyIpxLEemA-eWysK7BMQ" name="getmFechaDeCaducidad" method="_HQMMEJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HPmWM5xLEemA-eWysK7BMQ" type="_HO9dAJxLEemA-eWysK7BMQ" direction="return"/>
               </ownedOperation>
-              <ownedOperation xmi:id="_7QXUIJw2EemA-eWysK7BMQ" name="setCuenta" method="_7R9PkJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7QXUIZw2EemA-eWysK7BMQ" name="c" type="_7M7loJw2EemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HPOiwZxLEemA-eWysK7BMQ" name="setCuenta" method="_HQK995xLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HPOiwpxLEemA-eWysK7BMQ" name="c" type="_HM8DwJxLEemA-eWysK7BMQ"/>
               </ownedOperation>
-              <ownedOperation xmi:id="_7Q-_MJw2EemA-eWysK7BMQ" name="Tarjeta" method="_7R8ogJw2EemA-eWysK7BMQ">
-                <eAnnotations xmi:id="_7Q_mQ5w2EemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_7Q_mRJw2EemA-eWysK7BMQ" key="create"/>
+              <ownedOperation xmi:id="_HPlvIJxLEemA-eWysK7BMQ" name="Tarjeta" method="_HQK98JxLEemA-eWysK7BMQ">
+                <eAnnotations xmi:id="_HPmWMJxLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HPmWMZxLEemA-eWysK7BMQ" key="create"/>
                 </eAnnotations>
-                <ownedParameter xmi:id="_7Q_mQJw2EemA-eWysK7BMQ" name="numero">
+                <ownedParameter xmi:id="_HPlvIZxLEemA-eWysK7BMQ" name="numero">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7Q_mQZw2EemA-eWysK7BMQ" name="titular">
+                <ownedParameter xmi:id="_HPlvIpxLEemA-eWysK7BMQ" name="titular">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7Q_mQpw2EemA-eWysK7BMQ" name="fechaCaducidad" type="_7P6BIZw2EemA-eWysK7BMQ"/>
-                <ownedParameter xmi:id="_7Q_mRZw2EemA-eWysK7BMQ" type="_7NxTIJw2EemA-eWysK7BMQ" direction="return"/>
+                <ownedParameter xmi:id="_HPlvI5xLEemA-eWysK7BMQ" name="fechaCaducidad" type="_HO9dAJxLEemA-eWysK7BMQ"/>
+                <ownedParameter xmi:id="_HPmWMpxLEemA-eWysK7BMQ" type="_HNju0JxLEemA-eWysK7BMQ" direction="return"/>
               </ownedOperation>
-              <ownedOperation xmi:id="_7RA0YZw2EemA-eWysK7BMQ" name="setmFechaDeCaducidad" method="_7R_EwJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7RA0Ypw2EemA-eWysK7BMQ" name="mFechaDeCaducidad" type="_7P6BIZw2EemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HPm9QJxLEemA-eWysK7BMQ" name="setmFechaDeCaducidad" method="_HQMMEpxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HPm9QZxLEemA-eWysK7BMQ" name="mFechaDeCaducidad" type="_HO9dAJxLEemA-eWysK7BMQ"/>
               </ownedOperation>
             </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_7N6dEJw2EemA-eWysK7BMQ" name="CreditoTest">
-              <eAnnotations xmi:id="_7N7rMJw2EemA-eWysK7BMQ" source="http://ns.yatta.de/umllab">
-                <contents xmi:type="ecore:EAnnotation" xmi:id="_7N7rMZw2EemA-eWysK7BMQ" source="codegen">
-                  <details xmi:id="_7N7rMpw2EemA-eWysK7BMQ" key="codegenDirectory" value="/trabajo3-codigo-inicial/src/test/java"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HNwjIJxLEemA-eWysK7BMQ" name="CreditoTest">
+              <eAnnotations xmi:id="_HNxKMJxLEemA-eWysK7BMQ" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_HNxKMZxLEemA-eWysK7BMQ" source="codegen">
+                  <details xmi:id="_HNxKMpxLEemA-eWysK7BMQ" key="codegenDirectory" value="/trabajo3-codigo-inicial/src/test/java"/>
                 </contents>
               </eAnnotations>
-              <generalization xmi:id="_7RCpkJw2EemA-eWysK7BMQ" general="_7QP_YZw2EemA-eWysK7BMQ"/>
-              <ownedAttribute xmi:id="_7ReucJw2EemA-eWysK7BMQ" name="cuenta" visibility="package" type="_7M7loJw2EemA-eWysK7BMQ" association="_7SgCIJw2EemA-eWysK7BMQ"/>
-              <ownedAttribute xmi:id="_7RgjoJw2EemA-eWysK7BMQ" name="tarjeta" visibility="package" type="_7MoDoJw2EemA-eWysK7BMQ" association="_7ShQQZw2EemA-eWysK7BMQ"/>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7R_r0Jw2EemA-eWysK7BMQ" name="CreditoTest" specification="_7N85UJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7R_r0Zw2EemA-eWysK7BMQ" name="sTestName">
+              <generalization xmi:id="_HPoycJxLEemA-eWysK7BMQ" general="_HPS0MZxLEemA-eWysK7BMQ"/>
+              <ownedAttribute xmi:id="_HP87gZxLEemA-eWysK7BMQ" name="cuenta" visibility="package" type="_HM8DwJxLEemA-eWysK7BMQ" association="_HQa1kZxLEemA-eWysK7BMQ"/>
+              <ownedAttribute xmi:id="_HP9ikZxLEemA-eWysK7BMQ" name="tarjeta" visibility="package" type="_HNVsYJxLEemA-eWysK7BMQ" association="_HQbcoZxLEemA-eWysK7BMQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQMzJJxLEemA-eWysK7BMQ" name="CreditoTest" specification="_HNxxQJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQMzJZxLEemA-eWysK7BMQ" name="sTestName">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7R_r0pw2EemA-eWysK7BMQ" type="_7N6dEJw2EemA-eWysK7BMQ" direction="return"/>
+                <ownedParameter xmi:id="_HQMzJpxLEemA-eWysK7BMQ" type="_HNwjIJxLEemA-eWysK7BMQ" direction="return"/>
                 <language>java</language>
                 <body>super(sTestName);&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SAS4Jw2EemA-eWysK7BMQ" name="setUp" specification="_7N-Hc5w2EemA-eWysK7BMQ">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQNaMJxLEemA-eWysK7BMQ" name="setUp" specification="_HNyYU5xLEemA-eWysK7BMQ">
                 <language>java</language>
                 <body>cuenta = new Cuenta(&quot;0001.0002.12.1234567890&quot;, &quot;Fulano de Tal&quot;);&#xD;
 		cuenta.ingresar(1000.0);&#xD;
@@ -909,7 +1081,7 @@
 		tarjeta.setCuenta(cuenta);&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SAS4Zw2EemA-eWysK7BMQ" name="testIngresar500" specification="_7OCY4Jw2EemA-eWysK7BMQ">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQNaMZxLEemA-eWysK7BMQ" name="testIngresar500" specification="_HN0NgpxLEemA-eWysK7BMQ">
                 <language>java</language>
                 <body>try {&#xD;
 			double saldoAnteriorCuenta = cuenta.getSaldo();&#xD;
@@ -932,7 +1104,7 @@
 		}&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SA58Jw2EemA-eWysK7BMQ" name="testRetirar1" specification="_7ODnApw2EemA-eWysK7BMQ">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQNaMpxLEemA-eWysK7BMQ" name="testRetirar1" specification="_HN00k5xLEemA-eWysK7BMQ">
                 <language>java</language>
                 <body>try {&#xD;
 			double saldoAnteriorCuenta = cuenta.getSaldo();			&#xD;
@@ -950,7 +1122,7 @@
 		}&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SA58Zw2EemA-eWysK7BMQ" name="testRetirar300" specification="_7OE1Ipw2EemA-eWysK7BMQ">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQNaM5xLEemA-eWysK7BMQ" name="testRetirar300" specification="_HN1bo5xLEemA-eWysK7BMQ">
                 <language>java</language>
                 <body>try {&#xD;
 			double saldoAnteriorCuenta = cuenta.getSaldo();			&#xD;
@@ -968,7 +1140,7 @@
 		}&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SA58pw2EemA-eWysK7BMQ" name="testpagoEnEstablecimiento600" specification="_7OGDQpw2EemA-eWysK7BMQ">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQNaNJxLEemA-eWysK7BMQ" name="testpagoEnEstablecimiento600" specification="_HN2pwJxLEemA-eWysK7BMQ">
                 <language>java</language>
                 <body>try {&#xD;
 			double saldoAnteriorCuenta = cuenta.getSaldo();			&#xD;
@@ -986,7 +1158,7 @@
 		}&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SBhAJw2EemA-eWysK7BMQ" name="testLiquidar" specification="_7OHRYpw2EemA-eWysK7BMQ">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQNaNZxLEemA-eWysK7BMQ" name="testLiquidar" specification="_HN334JxLEemA-eWysK7BMQ">
                 <language>java</language>
                 <body>try {&#xD;
 			double saldoAnteriorCuenta = cuenta.getSaldo();&#xD;
@@ -1000,7 +1172,7 @@
 		}&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SBhAZw2EemA-eWysK7BMQ" name="testLiquidarBis" specification="_7OIfgpw2EemA-eWysK7BMQ">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQNaNpxLEemA-eWysK7BMQ" name="testLiquidarBis" specification="_HN4e8pxLEemA-eWysK7BMQ">
                 <language>java</language>
                 <body>try {&#xD;
 			double saldoAnteriorCuenta = cuenta.getSaldo();&#xD;
@@ -1015,10 +1187,10 @@
 		}&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SCIEJw2EemA-eWysK7BMQ" name="main" specification="_7OJtopw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7SCIEZw2EemA-eWysK7BMQ" name="args">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQOBQJxLEemA-eWysK7BMQ" name="main" specification="_HN5GApxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQOBQZxLEemA-eWysK7BMQ" name="args">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7SCIEpw2EemA-eWysK7BMQ" value="*"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HQOBQpxLEemA-eWysK7BMQ" value="*"/>
                 </ownedParameter>
                 <language>java</language>
                 <body>Result result = JUnitCore.runClasses(CreditoTest.class);&#xD;
@@ -1028,418 +1200,349 @@
 &#xD;
 	</body>
               </ownedBehavior>
-              <ownedOperation xmi:id="_7N85UJw2EemA-eWysK7BMQ" name="CreditoTest" method="_7R_r0Jw2EemA-eWysK7BMQ">
-                <eAnnotations xmi:id="_7N-HcJw2EemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_7N-HcZw2EemA-eWysK7BMQ" key="create"/>
+              <ownedOperation xmi:id="_HNxxQJxLEemA-eWysK7BMQ" name="CreditoTest" method="_HQMzJJxLEemA-eWysK7BMQ">
+                <eAnnotations xmi:id="_HNyYUJxLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HNyYUZxLEemA-eWysK7BMQ" key="create"/>
                 </eAnnotations>
-                <ownedParameter xmi:id="_7N9gYJw2EemA-eWysK7BMQ" name="sTestName">
+                <ownedParameter xmi:id="_HNxxQZxLEemA-eWysK7BMQ" name="sTestName">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7N-Hcpw2EemA-eWysK7BMQ" type="_7N6dEJw2EemA-eWysK7BMQ" direction="return"/>
+                <ownedParameter xmi:id="_HNyYUpxLEemA-eWysK7BMQ" type="_HNwjIJxLEemA-eWysK7BMQ" direction="return"/>
               </ownedOperation>
-              <ownedOperation xmi:id="_7N-Hc5w2EemA-eWysK7BMQ" name="setUp" method="_7SAS4Jw2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7OAjsZw2EemA-eWysK7BMQ" name="tearDown" raisedException="_7Q0nIZw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7OCY4Jw2EemA-eWysK7BMQ" name="testIngresar500" method="_7SAS4Zw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7ODnApw2EemA-eWysK7BMQ" name="testRetirar1" method="_7SA58Jw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7OE1Ipw2EemA-eWysK7BMQ" name="testRetirar300" method="_7SA58Zw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7OGDQpw2EemA-eWysK7BMQ" name="testpagoEnEstablecimiento600" method="_7SA58pw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7OHRYpw2EemA-eWysK7BMQ" name="testLiquidar" method="_7SBhAJw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7OIfgpw2EemA-eWysK7BMQ" name="testLiquidarBis" method="_7SBhAZw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7OJtopw2EemA-eWysK7BMQ" name="main" isStatic="true" method="_7SCIEJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7OJto5w2EemA-eWysK7BMQ" name="args">
+              <ownedOperation xmi:id="_HNyYU5xLEemA-eWysK7BMQ" name="setUp" method="_HQNaMJxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HNzmcpxLEemA-eWysK7BMQ" name="tearDown" raisedException="_HPeaYZxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HN0NgpxLEemA-eWysK7BMQ" name="testIngresar500" method="_HQNaMZxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HN00k5xLEemA-eWysK7BMQ" name="testRetirar1" method="_HQNaMpxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HN1bo5xLEemA-eWysK7BMQ" name="testRetirar300" method="_HQNaM5xLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HN2pwJxLEemA-eWysK7BMQ" name="testpagoEnEstablecimiento600" method="_HQNaNJxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HN334JxLEemA-eWysK7BMQ" name="testLiquidar" method="_HQNaNZxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HN4e8pxLEemA-eWysK7BMQ" name="testLiquidarBis" method="_HQNaNpxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HN5GApxLEemA-eWysK7BMQ" name="main" isStatic="true" method="_HQOBQJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HN5GA5xLEemA-eWysK7BMQ" name="args">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7OLi0Zw2EemA-eWysK7BMQ" value="*"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HN5tEZxLEemA-eWysK7BMQ" value="*"/>
                 </ownedParameter>
               </ownedOperation>
             </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_7OSQgJw2EemA-eWysK7BMQ" name="CuentaTest">
-              <eAnnotations xmi:id="_7OTeoJw2EemA-eWysK7BMQ" source="http://ns.yatta.de/umllab">
-                <contents xmi:type="ecore:EAnnotation" xmi:id="_7OTeoZw2EemA-eWysK7BMQ" source="codegen">
-                  <details xmi:id="_7OTeopw2EemA-eWysK7BMQ" key="codegenDirectory" value="/trabajo3-codigo-inicial/src/test/java"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HN8wYJxLEemA-eWysK7BMQ" name="DebitoTest">
+              <eAnnotations xmi:id="_HN9XcJxLEemA-eWysK7BMQ" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_HN9XcZxLEemA-eWysK7BMQ" source="codegen">
+                  <details xmi:id="_HN9XcpxLEemA-eWysK7BMQ" key="codegenDirectory" value="/trabajo3-codigo-inicial/src/test/java"/>
                 </contents>
               </eAnnotations>
-              <generalization xmi:id="_7REewJw2EemA-eWysK7BMQ" general="_7QP_YZw2EemA-eWysK7BMQ"/>
-              <ownedAttribute xmi:id="_7Ri_4Jw2EemA-eWysK7BMQ" name="cuenta" visibility="package" type="_7M7loJw2EemA-eWysK7BMQ" association="_7SieYZw2EemA-eWysK7BMQ"/>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SDWMJw2EemA-eWysK7BMQ" name="CuentaTest" specification="_7OUFsJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7SDWMZw2EemA-eWysK7BMQ" name="sTestName">
+              <generalization xmi:id="_HPpZgJxLEemA-eWysK7BMQ" general="_HPS0MZxLEemA-eWysK7BMQ"/>
+              <ownedAttribute xmi:id="_HP-wsJxLEemA-eWysK7BMQ" name="debito" visibility="package" type="_HNfdYJxLEemA-eWysK7BMQ" association="_HQbcpJxLEemA-eWysK7BMQ"/>
+              <ownedAttribute xmi:id="_HP-wspxLEemA-eWysK7BMQ" name="cuenta" visibility="package" type="_HM8DwJxLEemA-eWysK7BMQ" association="_HQcDsZxLEemA-eWysK7BMQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQOBQ5xLEemA-eWysK7BMQ" name="DebitoTest" specification="_HN9-gJxLEemA-eWysK7BMQ">
+                <ownedParameter xmi:id="_HQOBRJxLEemA-eWysK7BMQ" name="sTestName">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7SDWMpw2EemA-eWysK7BMQ" type="_7OSQgJw2EemA-eWysK7BMQ" direction="return"/>
+                <ownedParameter xmi:id="_HQOBRZxLEemA-eWysK7BMQ" type="_HN8wYJxLEemA-eWysK7BMQ" direction="return"/>
                 <language>java</language>
                 <body>super(sTestName);&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SDWM5w2EemA-eWysK7BMQ" name="setUp" specification="_7OVT0Jw2EemA-eWysK7BMQ">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQOBRpxLEemA-eWysK7BMQ" name="setUp" specification="_HN-lk5xLEemA-eWysK7BMQ">
                 <language>java</language>
                 <body>cuenta = new Cuenta(&quot;0001.0002.12.1234567890&quot;, &quot;Fulano de Tal&quot;);&#xD;
+		cuenta.ingresar(1000.0);&#xD;
+		Date hoy = new Date();&#xD;
+		LocalDate fechacaducidad = hoy.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();&#xD;
+		fechacaducidad.plusYears(4); // Caduca en 4 años&#xD;
+		debito = new Debito(new Tarjeta(&quot;1234567890123456&quot;, &quot;Fulano de Tal&quot;, fechacaducidad));&#xD;
+		debito.setCuenta(cuenta);&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SDWNJw2EemA-eWysK7BMQ" name="testIngresar1000" specification="_7OYXIpw2EemA-eWysK7BMQ">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQOBR5xLEemA-eWysK7BMQ" name="testIngresar100" specification="_HOAawpxLEemA-eWysK7BMQ">
                 <language>java</language>
                 <body>try {&#xD;
-			cuenta.ingresar(1000);&#xD;
-			assertTrue(cuenta.getSaldo() == 1000.0);&#xD;
+			double saldoAnteriorCuenta = cuenta.getSaldo();		&#xD;
+			debito.ingresar(100);&#xD;
+			double saldoActualCuenta = cuenta.getSaldo();&#xD;
+			assertTrue(debito.getSaldo() == cuenta.getSaldo());&#xD;
+			assertTrue(saldoAnteriorCuenta + 100 == saldoActualCuenta);			&#xD;
 		} catch (Exception e) {&#xD;
 			fail(&quot;No deberia haber fallado&quot;);&#xD;
 		}&#xD;
 	</body>
               </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SD9QJw2EemA-eWysK7BMQ" name="testRetirar1000" specification="_7OaMUJw2EemA-eWysK7BMQ">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQOoUJxLEemA-eWysK7BMQ" name="testRetirar1000" specification="_HOBo4JxLEemA-eWysK7BMQ">
                 <language>java</language>
                 <body>try {&#xD;
-			cuenta.retirar(1000);&#xD;
-			fail(&quot;No salta excepcion&quot;);&#xD;
-		} catch (Exception e) { }&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SD9QZw2EemA-eWysK7BMQ" name="testIngresoYRetirada" specification="_7ObacJw2EemA-eWysK7BMQ">
-                <language>java</language>
-                <body>try {&#xD;
-			cuenta.ingresar(1000.0);&#xD;
-			cuenta.retirar(300.0);&#xD;
-			assertTrue(cuenta.getSaldo() == 700.0);&#xD;
+			double saldoAnteriorCuenta = cuenta.getSaldo();		&#xD;
+			debito.retirar(1000.0);&#xD;
+			double saldoActualCuenta = cuenta.getSaldo();&#xD;
+			assertTrue(debito.getSaldo() == cuenta.getSaldo());&#xD;
+			assertTrue(saldoAnteriorCuenta -1000 == saldoActualCuenta);			&#xD;
 		} catch (Exception e) {&#xD;
 			fail(&quot;No deberia haber fallado&quot;);&#xD;
 		}&#xD;
 	</body>
               </ownedBehavior>
-              <ownedOperation xmi:id="_7OUFsJw2EemA-eWysK7BMQ" name="CuentaTest" method="_7SDWMJw2EemA-eWysK7BMQ">
-                <eAnnotations xmi:id="_7OUswJw2EemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_7OUswZw2EemA-eWysK7BMQ" key="create"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HQOoUZxLEemA-eWysK7BMQ" name="testpagoEnEstablecimiento100" specification="_HOCP8ZxLEemA-eWysK7BMQ">
+                <language>java</language>
+                <body>try {&#xD;
+			double saldoAnteriorCuenta = cuenta.getSaldo();		&#xD;
+			debito.pagoEnEstablecimiento(&quot;Mango&quot;, 100);&#xD;
+			double saldoActualCuenta = cuenta.getSaldo();&#xD;
+			assertTrue(debito.getSaldo() == cuenta.getSaldo());&#xD;
+			assertTrue(saldoAnteriorCuenta- 100 == saldoActualCuenta);&#xD;
+		} catch (Exception e) {&#xD;
+			fail(&quot;No deberia haber fallado&quot;);&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_HN9-gJxLEemA-eWysK7BMQ" name="DebitoTest" method="_HQOBQ5xLEemA-eWysK7BMQ">
+                <eAnnotations xmi:id="_HN-lkJxLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_HN-lkZxLEemA-eWysK7BMQ" key="create"/>
                 </eAnnotations>
-                <ownedParameter xmi:id="_7OUFsZw2EemA-eWysK7BMQ" name="sTestName">
+                <ownedParameter xmi:id="_HN9-gZxLEemA-eWysK7BMQ" name="sTestName">
                   <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
                 </ownedParameter>
-                <ownedParameter xmi:id="_7OUswpw2EemA-eWysK7BMQ" type="_7OSQgJw2EemA-eWysK7BMQ" direction="return"/>
+                <ownedParameter xmi:id="_HN-lkpxLEemA-eWysK7BMQ" type="_HN8wYJxLEemA-eWysK7BMQ" direction="return"/>
               </ownedOperation>
-              <ownedOperation xmi:id="_7OVT0Jw2EemA-eWysK7BMQ" name="setUp" method="_7SDWM5w2EemA-eWysK7BMQ" raisedException="_7Q0nIZw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7OXJAJw2EemA-eWysK7BMQ" name="tearDown" raisedException="_7Q0nIZw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7OYXIpw2EemA-eWysK7BMQ" name="testIngresar1000" method="_7SDWNJw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7OaMUJw2EemA-eWysK7BMQ" name="testRetirar1000" method="_7SD9QJw2EemA-eWysK7BMQ"/>
-              <ownedOperation xmi:id="_7ObacJw2EemA-eWysK7BMQ" name="testIngresoYRetirada" method="_7SD9QZw2EemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HN-lk5xLEemA-eWysK7BMQ" name="setUp" method="_HQOBRpxLEemA-eWysK7BMQ" raisedException="_HPeaYZxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HN_zsJxLEemA-eWysK7BMQ" name="tearDown" raisedException="_HPeaYZxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HOAawpxLEemA-eWysK7BMQ" name="testIngresar100" method="_HQOBR5xLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HOBo4JxLEemA-eWysK7BMQ" name="testRetirar1000" method="_HQOoUJxLEemA-eWysK7BMQ"/>
+              <ownedOperation xmi:id="_HOCP8ZxLEemA-eWysK7BMQ" name="testpagoEnEstablecimiento100" method="_HQOoUZxLEemA-eWysK7BMQ"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_7Ofr4Jw2EemA-eWysK7BMQ" name="Movimiento">
-              <ownedAttribute xmi:id="_7Rk1EJw2EemA-eWysK7BMQ" name="mConcepto">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_7RmDMJw2EemA-eWysK7BMQ" name="mFecha" visibility="protected" type="_7P6BIZw2EemA-eWysK7BMQ" association="_7SjsgZw2EemA-eWysK7BMQ"/>
-              <ownedAttribute xmi:id="_7RmqQZw2EemA-eWysK7BMQ" name="mImporte" visibility="private">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_7Rn4YJw2EemA-eWysK7BMQ" name="mLiquidado" visibility="private">
-                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-              </ownedAttribute>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SFLYJw2EemA-eWysK7BMQ" name="Movimiento" specification="_7Og6AJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7SFLYZw2EemA-eWysK7BMQ" type="_7Ofr4Jw2EemA-eWysK7BMQ" direction="return"/>
-                <language>java</language>
-                <body>setLiquidado(false); //lo necesito para los movimientos de las tarjetas de crédito&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SFLYpw2EemA-eWysK7BMQ" name="getImporte" specification="_7Oj9UJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7SFLY5w2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>return mImporte;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SFycJw2EemA-eWysK7BMQ" name="getConcepto" specification="_7OkkYZw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7SFycZw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>return mConcepto;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SGZgJw2EemA-eWysK7BMQ" name="setConcepto" specification="_7OlygJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7SGZgZw2EemA-eWysK7BMQ" name="newMConcepto">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>mConcepto = newMConcepto;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SGZgpw2EemA-eWysK7BMQ" name="getFecha" specification="_7OmZkJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7SGZg5w2EemA-eWysK7BMQ" type="_7P6BIZw2EemA-eWysK7BMQ" direction="return"/>
-                <language>java</language>
-                <body>return mFecha;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SHAkJw2EemA-eWysK7BMQ" name="setFecha" specification="_7RGT8Jw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7SHAkZw2EemA-eWysK7BMQ" name="newMFecha" type="_7P6BIZw2EemA-eWysK7BMQ"/>
-                <language>java</language>
-                <body>mFecha = newMFecha;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SHnoJw2EemA-eWysK7BMQ" name="setImporte" specification="_7OnnsJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7SHnoZw2EemA-eWysK7BMQ" name="newMImporte">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>mImporte = newMImporte;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SHnopw2EemA-eWysK7BMQ" name="isLiquidado" specification="_7Opc4Jw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7SHno5w2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>return mLiquidado;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7SIOsJw2EemA-eWysK7BMQ" name="setLiquidado" specification="_7OqD8Zw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7SIOsZw2EemA-eWysK7BMQ" name="mliquidado">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-                </ownedParameter>
-                <language>java</language>
-                <body>this.mLiquidado = mliquidado;&#xD;
-	</body>
-              </ownedBehavior>
-              <ownedOperation xmi:id="_7Og6AJw2EemA-eWysK7BMQ" name="Movimiento" method="_7SFLYJw2EemA-eWysK7BMQ">
-                <eAnnotations xmi:id="_7OhhEJw2EemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-                  <details xmi:id="_7OhhEZw2EemA-eWysK7BMQ" key="create"/>
-                </eAnnotations>
-                <ownedParameter xmi:id="_7OhhEpw2EemA-eWysK7BMQ" type="_7Ofr4Jw2EemA-eWysK7BMQ" direction="return"/>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7Oj9UJw2EemA-eWysK7BMQ" name="getImporte" method="_7SFLYpw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7OkkYJw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7OkkYZw2EemA-eWysK7BMQ" name="getConcepto" method="_7SFycJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7OlLcJw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7OlygJw2EemA-eWysK7BMQ" name="setConcepto" method="_7SGZgJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7OlygZw2EemA-eWysK7BMQ" name="newMConcepto">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7OmZkJw2EemA-eWysK7BMQ" name="getFecha" method="_7SGZgpw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7RFs4Jw2EemA-eWysK7BMQ" type="_7P6BIZw2EemA-eWysK7BMQ" direction="return"/>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7OnnsJw2EemA-eWysK7BMQ" name="setImporte" method="_7SHnoJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7Oo10Jw2EemA-eWysK7BMQ" name="newMImporte">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7Opc4Jw2EemA-eWysK7BMQ" name="isLiquidado" method="_7SHnopw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7OqD8Jw2EemA-eWysK7BMQ" direction="return">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7OqD8Zw2EemA-eWysK7BMQ" name="setLiquidado" method="_7SIOsJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7OqrAJw2EemA-eWysK7BMQ" name="mliquidado">
-                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
-                </ownedParameter>
-              </ownedOperation>
-              <ownedOperation xmi:id="_7RGT8Jw2EemA-eWysK7BMQ" name="setFecha" method="_7SHAkJw2EemA-eWysK7BMQ">
-                <ownedParameter xmi:id="_7RGT8Zw2EemA-eWysK7BMQ" name="newMFecha" type="_7P6BIZw2EemA-eWysK7BMQ"/>
-              </ownedOperation>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HQXLMJxLEemA-eWysK7BMQ" name="" memberEnd="_HQXLMZxLEemA-eWysK7BMQ _HP204ZxLEemA-eWysK7BMQ">
+              <ownedEnd xmi:id="_HQXLMZxLEemA-eWysK7BMQ" name="" type="_HNVsYJxLEemA-eWysK7BMQ" association="_HQXLMJxLEemA-eWysK7BMQ"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_7SVDAJw2EemA-eWysK7BMQ" name="" memberEnd="_7SVDAZw2EemA-eWysK7BMQ _7RKlYJw2EemA-eWysK7BMQ">
-              <ownedEnd xmi:id="_7SVDAZw2EemA-eWysK7BMQ" name="" type="_7MoDoJw2EemA-eWysK7BMQ" association="_7SVDAJw2EemA-eWysK7BMQ"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HQXyQZxLEemA-eWysK7BMQ" name="" memberEnd="_HQXyQpxLEemA-eWysK7BMQ _HP4qEJxLEemA-eWysK7BMQ">
+              <ownedEnd xmi:id="_HQXyQpxLEemA-eWysK7BMQ" name="" type="_HNVsYJxLEemA-eWysK7BMQ" association="_HQXyQZxLEemA-eWysK7BMQ"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_7SWRIZw2EemA-eWysK7BMQ" name="" memberEnd="_7SWRIpw2EemA-eWysK7BMQ _7RMakJw2EemA-eWysK7BMQ">
-              <ownedEnd xmi:id="_7SWRIpw2EemA-eWysK7BMQ" name="" type="_7MoDoJw2EemA-eWysK7BMQ" association="_7SWRIZw2EemA-eWysK7BMQ"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HQZAYZxLEemA-eWysK7BMQ" name="" memberEnd="_HQZAYpxLEemA-eWysK7BMQ _HP54MZxLEemA-eWysK7BMQ">
+              <ownedEnd xmi:id="_HQZAYpxLEemA-eWysK7BMQ" name="" type="_HNju0JxLEemA-eWysK7BMQ" association="_HQZAYZxLEemA-eWysK7BMQ"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_7SXfQZw2EemA-eWysK7BMQ" name="" memberEnd="_7SXfQpw2EemA-eWysK7BMQ _7RQE8Zw2EemA-eWysK7BMQ">
-              <ownedEnd xmi:id="_7SXfQpw2EemA-eWysK7BMQ" name="" type="_7M7loJw2EemA-eWysK7BMQ" association="_7SXfQZw2EemA-eWysK7BMQ"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HQZncZxLEemA-eWysK7BMQ" name="" memberEnd="_HQZncpxLEemA-eWysK7BMQ _HP7tYJxLEemA-eWysK7BMQ">
+              <ownedEnd xmi:id="_HQZncpxLEemA-eWysK7BMQ" name="" type="_HNju0JxLEemA-eWysK7BMQ" association="_HQZncZxLEemA-eWysK7BMQ"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_7SYtYZw2EemA-eWysK7BMQ" name="" memberEnd="_7SYtYpw2EemA-eWysK7BMQ _7RWLkJw2EemA-eWysK7BMQ">
-              <ownedEnd xmi:id="_7SYtYpw2EemA-eWysK7BMQ" name="" type="_7NipoJw2EemA-eWysK7BMQ" association="_7SYtYZw2EemA-eWysK7BMQ"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HQa1kZxLEemA-eWysK7BMQ" name="" memberEnd="_HQa1kpxLEemA-eWysK7BMQ _HP87gZxLEemA-eWysK7BMQ">
+              <ownedEnd xmi:id="_HQa1kpxLEemA-eWysK7BMQ" name="" type="_HNwjIJxLEemA-eWysK7BMQ" association="_HQa1kZxLEemA-eWysK7BMQ"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_7SZ7gZw2EemA-eWysK7BMQ" name="" memberEnd="_7SZ7gpw2EemA-eWysK7BMQ _7RWyoZw2EemA-eWysK7BMQ">
-              <ownedEnd xmi:id="_7SZ7gpw2EemA-eWysK7BMQ" name="" type="_7NipoJw2EemA-eWysK7BMQ" association="_7SZ7gZw2EemA-eWysK7BMQ"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HQbcoZxLEemA-eWysK7BMQ" name="" memberEnd="_HQbcopxLEemA-eWysK7BMQ _HP9ikZxLEemA-eWysK7BMQ">
+              <ownedEnd xmi:id="_HQbcopxLEemA-eWysK7BMQ" name="" type="_HNwjIJxLEemA-eWysK7BMQ" association="_HQbcoZxLEemA-eWysK7BMQ"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_7SbwsJw2EemA-eWysK7BMQ" name="" memberEnd="_7SbwsZw2EemA-eWysK7BMQ _7RYAwJw2EemA-eWysK7BMQ">
-              <ownedEnd xmi:id="_7SbwsZw2EemA-eWysK7BMQ" name="" type="_7NxTIJw2EemA-eWysK7BMQ" association="_7SbwsJw2EemA-eWysK7BMQ"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HQbcpJxLEemA-eWysK7BMQ" name="" memberEnd="_HQbcpZxLEemA-eWysK7BMQ _HP-wsJxLEemA-eWysK7BMQ">
+              <ownedEnd xmi:id="_HQbcpZxLEemA-eWysK7BMQ" name="" type="_HN8wYJxLEemA-eWysK7BMQ" association="_HQbcpJxLEemA-eWysK7BMQ"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_7SeM8Zw2EemA-eWysK7BMQ" name="" memberEnd="_7SeM8pw2EemA-eWysK7BMQ _7RadAJw2EemA-eWysK7BMQ">
-              <ownedEnd xmi:id="_7SeM8pw2EemA-eWysK7BMQ" name="" type="_7NxTIJw2EemA-eWysK7BMQ" association="_7SeM8Zw2EemA-eWysK7BMQ"/>
-            </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_7SgCIJw2EemA-eWysK7BMQ" name="" memberEnd="_7SgCIZw2EemA-eWysK7BMQ _7ReucJw2EemA-eWysK7BMQ">
-              <ownedEnd xmi:id="_7SgCIZw2EemA-eWysK7BMQ" name="" type="_7N6dEJw2EemA-eWysK7BMQ" association="_7SgCIJw2EemA-eWysK7BMQ"/>
-            </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_7ShQQZw2EemA-eWysK7BMQ" name="" memberEnd="_7ShQQpw2EemA-eWysK7BMQ _7RgjoJw2EemA-eWysK7BMQ">
-              <ownedEnd xmi:id="_7ShQQpw2EemA-eWysK7BMQ" name="" type="_7N6dEJw2EemA-eWysK7BMQ" association="_7ShQQZw2EemA-eWysK7BMQ"/>
-            </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_7SieYZw2EemA-eWysK7BMQ" name="" memberEnd="_7SieYpw2EemA-eWysK7BMQ _7Ri_4Jw2EemA-eWysK7BMQ">
-              <ownedEnd xmi:id="_7SieYpw2EemA-eWysK7BMQ" name="" type="_7OSQgJw2EemA-eWysK7BMQ" association="_7SieYZw2EemA-eWysK7BMQ"/>
-            </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_7SjsgZw2EemA-eWysK7BMQ" name="" memberEnd="_7Sjsgpw2EemA-eWysK7BMQ _7RmDMJw2EemA-eWysK7BMQ">
-              <ownedEnd xmi:id="_7Sjsgpw2EemA-eWysK7BMQ" name="" type="_7Ofr4Jw2EemA-eWysK7BMQ" association="_7SjsgZw2EemA-eWysK7BMQ"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HQcDsZxLEemA-eWysK7BMQ" name="" memberEnd="_HQcDspxLEemA-eWysK7BMQ _HP-wspxLEemA-eWysK7BMQ">
+              <ownedEnd xmi:id="_HQcDspxLEemA-eWysK7BMQ" name="" type="_HN8wYJxLEemA-eWysK7BMQ" association="_HQcDsZxLEemA-eWysK7BMQ"/>
             </packagedElement>
           </packagedElement>
         </packagedElement>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_7LEkcJw2EemA-eWysK7BMQ" name="java">
-      <packagedElement xmi:type="uml:Package" xmi:id="_7LFLgJw2EemA-eWysK7BMQ" name="util">
-        <packagedElement xmi:type="uml:DataType" xmi:id="_7P290Jw2EemA-eWysK7BMQ" name="Date"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_7P4L8Zw2EemA-eWysK7BMQ" name="Vector"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HLzbUpxLEemA-eWysK7BMQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_HLzbU5xLEemA-eWysK7BMQ" name="time">
+        <packagedElement xmi:type="uml:Class" xmi:id="_HO9dAJxLEemA-eWysK7BMQ" name="LocalDate"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HO-rIZxLEemA-eWysK7BMQ" name="ZoneId"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_7LFLgZw2EemA-eWysK7BMQ" name="time">
-        <packagedElement xmi:type="uml:Class" xmi:id="_7P6BIZw2EemA-eWysK7BMQ" name="LocalDate"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_7P7PQZw2EemA-eWysK7BMQ" name="ZoneId"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_HL0CYJxLEemA-eWysK7BMQ" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_HO_SMZxLEemA-eWysK7BMQ" name="Date"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HPAgUZxLEemA-eWysK7BMQ" name="Vector"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_7Q0nIJw2EemA-eWysK7BMQ" name="lang">
-        <packagedElement xmi:type="uml:Class" xmi:id="_7Q0nIZw2EemA-eWysK7BMQ" name="Exception"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_HPeaYJxLEemA-eWysK7BMQ" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_HPeaYZxLEemA-eWysK7BMQ" name="Exception"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_7LgpUJw2EemA-eWysK7BMQ" name="org">
-      <packagedElement xmi:type="uml:Package" xmi:id="_7LgpUZw2EemA-eWysK7BMQ" name="junit">
-        <packagedElement xmi:type="uml:Package" xmi:id="_7LurwJw2EemA-eWysK7BMQ" name="runner">
-          <packagedElement xmi:type="uml:Package" xmi:id="_7LvS0Jw2EemA-eWysK7BMQ" name="notification">
-            <packagedElement xmi:type="uml:Class" xmi:id="_7Qeo4Jw2EemA-eWysK7BMQ" name="Failure"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HMdioJxLEemA-eWysK7BMQ" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_HMdioZxLEemA-eWysK7BMQ" name="junit">
+        <packagedElement xmi:type="uml:Package" xmi:id="_HMh0EJxLEemA-eWysK7BMQ" name="runner">
+          <packagedElement xmi:type="uml:Package" xmi:id="_HMh0EZxLEemA-eWysK7BMQ" name="notification">
+            <packagedElement xmi:type="uml:Class" xmi:id="_HPWekZxLEemA-eWysK7BMQ" name="Failure"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_7QblkJw2EemA-eWysK7BMQ" name="JUnitCore"/>
-          <packagedElement xmi:type="uml:Class" xmi:id="_7QczsZw2EemA-eWysK7BMQ" name="Result"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_HPUpYJxLEemA-eWysK7BMQ" name="JUnitCore"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_HPV3gZxLEemA-eWysK7BMQ" name="Result"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Interface" xmi:id="_7QLG4Jw2EemA-eWysK7BMQ" name="After"/>
-        <packagedElement xmi:type="uml:Interface" xmi:id="_7QMVAZw2EemA-eWysK7BMQ" name="Before"/>
-        <packagedElement xmi:type="uml:Interface" xmi:id="_7QOKMZw2EemA-eWysK7BMQ" name="Test"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_HPQX8JxLEemA-eWysK7BMQ" name="After"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_HPQ_AZxLEemA-eWysK7BMQ" name="Before"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_HPSNIJxLEemA-eWysK7BMQ" name="Test"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_7LhQYJw2EemA-eWysK7BMQ" name="junit">
-      <packagedElement xmi:type="uml:Package" xmi:id="_7LhQYZw2EemA-eWysK7BMQ" name="framework">
-        <packagedElement xmi:type="uml:Class" xmi:id="_7QP_YZw2EemA-eWysK7BMQ" name="TestCase"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HMdiopxLEemA-eWysK7BMQ" name="junit">
+      <packagedElement xmi:type="uml:Package" xmi:id="_HMeJsJxLEemA-eWysK7BMQ" name="framework">
+        <packagedElement xmi:type="uml:Class" xmi:id="_HPS0MZxLEemA-eWysK7BMQ" name="TestCase"/>
       </packagedElement>
     </packagedElement>
-    <profileApplication xmi:id="_6v_K8Jw2EemA-eWysK7BMQ">
-      <eAnnotations xmi:id="_6wDcYJw2EemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_GwqXcJxLEemA-eWysK7BMQ">
+      <eAnnotations xmi:id="_GwqXcZxLEemA-eWysK7BMQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
       </eAnnotations>
       <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
     </profileApplication>
   </uml:Model>
-  <UMLLabProfile:TargetLanguage xmi:id="_6wEqgJw2EemA-eWysK7BMQ" base_Package="_6gSiEJw2EemA-eWysK7BMQ">
+  <UMLLabProfile:TargetLanguage xmi:id="_Gwq-gJxLEemA-eWysK7BMQ" base_Package="_GfyC0JxLEemA-eWysK7BMQ">
     <languageName>java</languageName>
   </UMLLabProfile:TargetLanguage>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7NmUAJw2EemA-eWysK7BMQ" base_Element="_7Nls8Jw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7NniIJw2EemA-eWysK7BMQ" base_Element="_7Nls8Jw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7NniIZw2EemA-eWysK7BMQ" name="Before"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HNrDkJxLEemA-eWysK7BMQ" base_Element="_HNqchJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HNrqoJxLEemA-eWysK7BMQ" base_Element="_HNqchJxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HNrqoZxLEemA-eWysK7BMQ" name="Before"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7NowQJw2EemA-eWysK7BMQ" base_Element="_7NoJMJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7NpXUJw2EemA-eWysK7BMQ" base_Element="_7NoJMJw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7NpXUZw2EemA-eWysK7BMQ" name="After"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HNsRsZxLEemA-eWysK7BMQ" base_Element="_HNsRsJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HNs4wJxLEemA-eWysK7BMQ" base_Element="_HNsRsJxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HNs4wZxLEemA-eWysK7BMQ" name="After"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7NqlcJw2EemA-eWysK7BMQ" base_Element="_7Np-YJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7NrMgJw2EemA-eWysK7BMQ" base_Element="_7Np-YJw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7NrMgZw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HNtf0JxLEemA-eWysK7BMQ" base_Element="_HNs4wpxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HNuG4JxLEemA-eWysK7BMQ" base_Element="_HNs4wpxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HNuG4ZxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7NrzkJw2EemA-eWysK7BMQ" base_Element="_7NrMgpw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7NtBsJw2EemA-eWysK7BMQ" base_Element="_7NrMgpw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7NtBsZw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HNut8JxLEemA-eWysK7BMQ" base_Element="_HNuG4pxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HNut8ZxLEemA-eWysK7BMQ" base_Element="_HNuG4pxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HNut8pxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7NuP0Jw2EemA-eWysK7BMQ" base_Element="_7NtowJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7NuP0Zw2EemA-eWysK7BMQ" base_Element="_7NtowJw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7Nu24Jw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HNvVAJxLEemA-eWysK7BMQ" base_Element="_HNut85xLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HNvVAZxLEemA-eWysK7BMQ" base_Element="_HNut85xLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HNvVApxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7N-ugJw2EemA-eWysK7BMQ" base_Element="_7N-Hc5w2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7N_8oJw2EemA-eWysK7BMQ" base_Element="_7N-Hc5w2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OAjsJw2EemA-eWysK7BMQ" name="Before"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HNy_YJxLEemA-eWysK7BMQ" base_Element="_HNyYU5xLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HNzmcJxLEemA-eWysK7BMQ" base_Element="_HNyYU5xLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HNzmcZxLEemA-eWysK7BMQ" name="Before"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OBKwJw2EemA-eWysK7BMQ" base_Element="_7OAjsZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7OBx0Jw2EemA-eWysK7BMQ" base_Element="_7OAjsZw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OBx0Zw2EemA-eWysK7BMQ" name="After"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HNzmc5xLEemA-eWysK7BMQ" base_Element="_HNzmcpxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HN0NgJxLEemA-eWysK7BMQ" base_Element="_HNzmcpxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HN0NgZxLEemA-eWysK7BMQ" name="After"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OC_8Jw2EemA-eWysK7BMQ" base_Element="_7OCY4Jw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7ODnAJw2EemA-eWysK7BMQ" base_Element="_7OCY4Jw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7ODnAZw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HN00kJxLEemA-eWysK7BMQ" base_Element="_HN0NgpxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HN00kZxLEemA-eWysK7BMQ" base_Element="_HN0NgpxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HN00kpxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OEOEJw2EemA-eWysK7BMQ" base_Element="_7ODnApw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7OE1IJw2EemA-eWysK7BMQ" base_Element="_7ODnApw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OE1IZw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HN1boJxLEemA-eWysK7BMQ" base_Element="_HN00k5xLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HN1boZxLEemA-eWysK7BMQ" base_Element="_HN00k5xLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HN1bopxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OFcMJw2EemA-eWysK7BMQ" base_Element="_7OE1Ipw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7OGDQJw2EemA-eWysK7BMQ" base_Element="_7OE1Ipw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OGDQZw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HN2CsJxLEemA-eWysK7BMQ" base_Element="_HN1bo5xLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HN2CsZxLEemA-eWysK7BMQ" base_Element="_HN1bo5xLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HN2CspxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OGqUJw2EemA-eWysK7BMQ" base_Element="_7OGDQpw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7OHRYJw2EemA-eWysK7BMQ" base_Element="_7OGDQpw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OHRYZw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HN3Q0JxLEemA-eWysK7BMQ" base_Element="_HN2pwJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HN3Q0ZxLEemA-eWysK7BMQ" base_Element="_HN2pwJxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HN3Q0pxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OH4cJw2EemA-eWysK7BMQ" base_Element="_7OHRYpw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7OIfgJw2EemA-eWysK7BMQ" base_Element="_7OHRYpw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OIfgZw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HN334ZxLEemA-eWysK7BMQ" base_Element="_HN334JxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HN4e8JxLEemA-eWysK7BMQ" base_Element="_HN334JxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HN4e8ZxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OJGkJw2EemA-eWysK7BMQ" base_Element="_7OIfgpw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7OJtoJw2EemA-eWysK7BMQ" base_Element="_7OIfgpw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OJtoZw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HN4e85xLEemA-eWysK7BMQ" base_Element="_HN4e8pxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HN5GAJxLEemA-eWysK7BMQ" base_Element="_HN4e8pxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HN5GAZxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OLi0Jw2EemA-eWysK7BMQ" base_Element="_7OJtopw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Array xmi:id="_7OMJ4Jw2EemA-eWysK7BMQ" base_Element="_7OJto5w2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OV64Jw2EemA-eWysK7BMQ" base_Element="_7OVT0Jw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7OWh8Jw2EemA-eWysK7BMQ" base_Element="_7OVT0Jw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OWh8Zw2EemA-eWysK7BMQ" name="Before"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HN5tEJxLEemA-eWysK7BMQ" base_Element="_HN5GApxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Array xmi:id="_HN6UIJxLEemA-eWysK7BMQ" base_Element="_HN5GA5xLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HN_MoJxLEemA-eWysK7BMQ" base_Element="_HN-lk5xLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HN_MoZxLEemA-eWysK7BMQ" base_Element="_HN-lk5xLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HN_MopxLEemA-eWysK7BMQ" name="Before"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OXwEJw2EemA-eWysK7BMQ" base_Element="_7OXJAJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7OYXIJw2EemA-eWysK7BMQ" base_Element="_7OXJAJw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OYXIZw2EemA-eWysK7BMQ" name="After"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HN_zsZxLEemA-eWysK7BMQ" base_Element="_HN_zsJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HOAawJxLEemA-eWysK7BMQ" base_Element="_HN_zsJxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HOAawZxLEemA-eWysK7BMQ" name="After"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OZlQJw2EemA-eWysK7BMQ" base_Element="_7OYXIpw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7OZlQZw2EemA-eWysK7BMQ" base_Element="_7OYXIpw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OZlQpw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HOBB0JxLEemA-eWysK7BMQ" base_Element="_HOAawpxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HOBB0ZxLEemA-eWysK7BMQ" base_Element="_HOAawpxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HOBB0pxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7OazYJw2EemA-eWysK7BMQ" base_Element="_7OaMUJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7OazYZw2EemA-eWysK7BMQ" base_Element="_7OaMUJw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OazYpw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HOBo4ZxLEemA-eWysK7BMQ" base_Element="_HOBo4JxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HOBo4pxLEemA-eWysK7BMQ" base_Element="_HOBo4JxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HOCP8JxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7ObacZw2EemA-eWysK7BMQ" base_Element="_7ObacJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Annotations xmi:id="_7OcBgJw2EemA-eWysK7BMQ" base_Element="_7ObacJw2EemA-eWysK7BMQ">
-    <annotations xmi:id="_7OcBgZw2EemA-eWysK7BMQ" name="Test"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HOCP8pxLEemA-eWysK7BMQ" base_Element="_HOCP8ZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Annotations xmi:id="_HOC3AJxLEemA-eWysK7BMQ" base_Element="_HOCP8ZxLEemA-eWysK7BMQ">
+    <annotations xmi:id="_HOC3AZxLEemA-eWysK7BMQ" name="Test"/>
   </UMLLabProfile:Annotations>
-  <UMLLabProfile:Reference xmi:id="_7P4L8Jw2EemA-eWysK7BMQ" base_Element="_7P290Jw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7P6BIJw2EemA-eWysK7BMQ" base_Element="_7P4L8Zw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7P7PQJw2EemA-eWysK7BMQ" base_Element="_7P6BIZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7P8dYJw2EemA-eWysK7BMQ" base_Element="_7P7PQZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7QMVAJw2EemA-eWysK7BMQ" base_Element="_7QLG4Jw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7QOKMJw2EemA-eWysK7BMQ" base_Element="_7QMVAZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7QP_YJw2EemA-eWysK7BMQ" base_Element="_7QOKMZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7QRNgJw2EemA-eWysK7BMQ" base_Element="_7QP_YZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7QczsJw2EemA-eWysK7BMQ" base_Element="_7QblkJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7QeB0Jw2EemA-eWysK7BMQ" base_Element="_7QczsZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7Qf3AJw2EemA-eWysK7BMQ" base_Element="_7Qeo4Jw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7Q11QJw2EemA-eWysK7BMQ" base_Element="_7Q0nIZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Generics xmi:id="_7Q7U0Jw2EemA-eWysK7BMQ" genericsValue="Movimiento" base_Element="_7Q5foZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RJ-UJw2EemA-eWysK7BMQ" base_Element="_7RJXQJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Generics xmi:id="_7RLzgJw2EemA-eWysK7BMQ" genericsValue="Movimiento" base_Element="_7RKlYJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RLzgZw2EemA-eWysK7BMQ" base_Element="_7RKlYJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RNBoJw2EemA-eWysK7BMQ" base_Element="_7RMakJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RNosJw2EemA-eWysK7BMQ" base_Element="_7RNBoZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RO20Jw2EemA-eWysK7BMQ" base_Element="_7ROPwJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RQE8Jw2EemA-eWysK7BMQ" base_Element="_7RPd4Jw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Generics xmi:id="_7RRTEJw2EemA-eWysK7BMQ" genericsValue="Movimiento" base_Element="_7RQE8Zw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RShMJw2EemA-eWysK7BMQ" base_Element="_7RQE8Zw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RTvUJw2EemA-eWysK7BMQ" base_Element="_7RTIQJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RUWYJw2EemA-eWysK7BMQ" base_Element="_7RTvUZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RVkgJw2EemA-eWysK7BMQ" base_Element="_7RU9cJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RWyoJw2EemA-eWysK7BMQ" base_Element="_7RWLkJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RXZsJw2EemA-eWysK7BMQ" base_Element="_7RWyoZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RYn0Jw2EemA-eWysK7BMQ" base_Element="_7RYAwJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:MultiDeclaration xmi:id="_7RZO4Zw2EemA-eWysK7BMQ" base_Property="_7RZO4Jw2EemA-eWysK7BMQ" siblings="_7SL5EJw2EemA-eWysK7BMQ" root="true"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RZ18Jw2EemA-eWysK7BMQ" base_Element="_7RZO4Jw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RbrIJw2EemA-eWysK7BMQ" base_Element="_7RadAJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7Rf8kJw2EemA-eWysK7BMQ" base_Element="_7ReucJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RhKsJw2EemA-eWysK7BMQ" base_Element="_7RgjoJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7Rjm8Jw2EemA-eWysK7BMQ" base_Element="_7Ri_4Jw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RlcIJw2EemA-eWysK7BMQ" base_Element="_7Rk1EJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RmqQJw2EemA-eWysK7BMQ" base_Element="_7RmDMJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RnRUJw2EemA-eWysK7BMQ" base_Element="_7RmqQZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7RofcJw2EemA-eWysK7BMQ" base_Element="_7Rn4YJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:MultiDeclaration xmi:id="_7SMgIJw2EemA-eWysK7BMQ" base_Property="_7SL5EJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:LegacyStyledElement xmi:id="_7SNHMJw2EemA-eWysK7BMQ" base_Element="_7SL5EJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7SWRIJw2EemA-eWysK7BMQ" base_Element="_7SVDAJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7SXfQJw2EemA-eWysK7BMQ" base_Element="_7SWRIZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7SYtYJw2EemA-eWysK7BMQ" base_Element="_7SXfQZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7SZ7gJw2EemA-eWysK7BMQ" base_Element="_7SYtYZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7SbJoJw2EemA-eWysK7BMQ" base_Element="_7SZ7gZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7SeM8Jw2EemA-eWysK7BMQ" base_Element="_7SbwsJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7SfbEJw2EemA-eWysK7BMQ" base_Element="_7SeM8Zw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7ShQQJw2EemA-eWysK7BMQ" base_Element="_7SgCIJw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7SieYJw2EemA-eWysK7BMQ" base_Element="_7ShQQZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7SjsgJw2EemA-eWysK7BMQ" base_Element="_7SieYZw2EemA-eWysK7BMQ"/>
-  <UMLLabProfile:Reference xmi:id="_7Sk6oJw2EemA-eWysK7BMQ" base_Element="_7SjsgZw2EemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HO-rIJxLEemA-eWysK7BMQ" base_Element="_HO9dAJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HO_SMJxLEemA-eWysK7BMQ" base_Element="_HO-rIZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HPAgUJxLEemA-eWysK7BMQ" base_Element="_HO_SMZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HPBHYJxLEemA-eWysK7BMQ" base_Element="_HPAgUZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HPQ_AJxLEemA-eWysK7BMQ" base_Element="_HPQX8JxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HPRmEJxLEemA-eWysK7BMQ" base_Element="_HPQ_AZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HPS0MJxLEemA-eWysK7BMQ" base_Element="_HPSNIJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HPTbQJxLEemA-eWysK7BMQ" base_Element="_HPS0MZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HPV3gJxLEemA-eWysK7BMQ" base_Element="_HPUpYJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HPWekJxLEemA-eWysK7BMQ" base_Element="_HPV3gZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HPXFoJxLEemA-eWysK7BMQ" base_Element="_HPWekZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HPfBcJxLEemA-eWysK7BMQ" base_Element="_HPeaYZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Generics xmi:id="_HPg2oJxLEemA-eWysK7BMQ" genericsValue="Movimiento" base_Element="_HPfogZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HPsc0JxLEemA-eWysK7BMQ" base_Element="_HPr1wJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HPtD4JxLEemA-eWysK7BMQ" base_Element="_HPsc0ZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Generics xmi:id="_HPtq8JxLEemA-eWysK7BMQ" genericsValue="Movimiento" base_Element="_HPtD4ZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HPuSAJxLEemA-eWysK7BMQ" base_Element="_HPtD4ZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HPu5EZxLEemA-eWysK7BMQ" base_Element="_HPu5EJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HPvgIJxLEemA-eWysK7BMQ" base_Element="_HPu5EpxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HPwuQJxLEemA-eWysK7BMQ" base_Element="_HPvgIZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HPx8YJxLEemA-eWysK7BMQ" base_Element="_HPxVUJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HPzKgJxLEemA-eWysK7BMQ" base_Element="_HPyjcJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HPzxkJxLEemA-eWysK7BMQ" base_Element="_HPzKgZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP0YoJxLEemA-eWysK7BMQ" base_Element="_HPzxkZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP0_sZxLEemA-eWysK7BMQ" base_Element="_HP0_sJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP1mwZxLEemA-eWysK7BMQ" base_Element="_HP1mwJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP204JxLEemA-eWysK7BMQ" base_Element="_HP2N0JxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Generics xmi:id="_HP4DAJxLEemA-eWysK7BMQ" genericsValue="Movimiento" base_Element="_HP204ZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP4DAZxLEemA-eWysK7BMQ" base_Element="_HP204ZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP5RIJxLEemA-eWysK7BMQ" base_Element="_HP4qEJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP54MJxLEemA-eWysK7BMQ" base_Element="_HP5RIZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP6fQJxLEemA-eWysK7BMQ" base_Element="_HP54MZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_HP7GUJxLEemA-eWysK7BMQ" base_Property="_HP6fQZxLEemA-eWysK7BMQ" siblings="_HQQdgpxLEemA-eWysK7BMQ" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP7GUZxLEemA-eWysK7BMQ" base_Element="_HP6fQZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP7tYZxLEemA-eWysK7BMQ" base_Element="_HP7tYJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP87gJxLEemA-eWysK7BMQ" base_Element="_HP8UcJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP9ikJxLEemA-eWysK7BMQ" base_Element="_HP87gZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP-JoJxLEemA-eWysK7BMQ" base_Element="_HP9ikZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP-wsZxLEemA-eWysK7BMQ" base_Element="_HP-wsJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HP_XwJxLEemA-eWysK7BMQ" base_Element="_HP-wspxLEemA-eWysK7BMQ"/>
+  <uml:OpaqueBehavior xmi:id="_HQEQQJxLEemA-eWysK7BMQ" name="EntidadEmisoraTipo" specification="_HNMicJxLEemA-eWysK7BMQ">
+    <ownedParameter xmi:id="_HQEQQZxLEemA-eWysK7BMQ" name="tipo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_HQEQQpxLEemA-eWysK7BMQ" name="comision">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_HQEQQ5xLEemA-eWysK7BMQ" type="_HNIRAJxLEemA-eWysK7BMQ" direction="return"/>
+    <language>java</language>
+    <body>this.mTipo = tipo;&#xD;
+     this.mComision = comision;&#xD;
+ </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_HQE3UJxLEemA-eWysK7BMQ" name="getByTipo" specification="_HNNJgZxLEemA-eWysK7BMQ">
+    <ownedParameter xmi:id="_HQE3UZxLEemA-eWysK7BMQ" name="tipo">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_HQE3UpxLEemA-eWysK7BMQ" type="_HNIRAJxLEemA-eWysK7BMQ" direction="return"/>
+    <language>java</language>
+    <body>for (EntidadEmisoraTipo emt : EntidadEmisoraTipo.values()) {&#xD;
+         if (emt.mTipo == tipo) return emt;&#xD;
+     }&#xD;
+     throw new IllegalArgumentException(&quot;EntidadEmisoraTipo not found.&quot;);&#xD;
+ </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_HQE3U5xLEemA-eWysK7BMQ" name="getmTipo" specification="_HNNwkJxLEemA-eWysK7BMQ">
+    <ownedParameter xmi:id="_HQFeYJxLEemA-eWysK7BMQ" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return this.mTipo;&#xD;
+ </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_HQFeYZxLEemA-eWysK7BMQ" name="getmComision" specification="_HNOXoJxLEemA-eWysK7BMQ">
+    <ownedParameter xmi:id="_HQFeYpxLEemA-eWysK7BMQ" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return this.mComision;&#xD;
+ </body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:MultiDeclaration xmi:id="_HQREkJxLEemA-eWysK7BMQ" base_Property="_HQQdgpxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_HQREkZxLEemA-eWysK7BMQ" base_Element="_HQQdgpxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HQVWAJxLEemA-eWysK7BMQ" base_Element="_HQUu8JxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HQWkIJxLEemA-eWysK7BMQ" base_Element="_HQV9EJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HQXyQJxLEemA-eWysK7BMQ" base_Element="_HQXLMJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HQZAYJxLEemA-eWysK7BMQ" base_Element="_HQXyQZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HQZncJxLEemA-eWysK7BMQ" base_Element="_HQZAYZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HQaOgJxLEemA-eWysK7BMQ" base_Element="_HQZncZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HQa1kJxLEemA-eWysK7BMQ" base_Element="_HQaOgZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HQbcoJxLEemA-eWysK7BMQ" base_Element="_HQa1kZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HQbco5xLEemA-eWysK7BMQ" base_Element="_HQbcoZxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HQcDsJxLEemA-eWysK7BMQ" base_Element="_HQbcpJxLEemA-eWysK7BMQ"/>
+  <UMLLabProfile:Reference xmi:id="_HQcqwJxLEemA-eWysK7BMQ" base_Element="_HQcDsZxLEemA-eWysK7BMQ"/>
 </xmi:XMI>
