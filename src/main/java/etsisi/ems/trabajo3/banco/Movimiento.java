@@ -8,7 +8,10 @@ public class Movimiento {
 	private double mImporte;
 	private boolean mLiquidado;
 
-	public Movimiento() {		
+	public Movimiento(String concepto, double importe, LocalDate fecha) {
+		this.mConcepto = concepto;
+		this.mImporte = importe;
+		this.mFecha = fecha;
 		setLiquidado(false); //lo necesito para los movimientos de las tarjetas de crédito
 	}
 

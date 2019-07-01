@@ -70,13 +70,10 @@ public class Credito extends Tarjeta{
 		double comision = (x * comisiontarifa < 3.0 ? 3 : x * comisiontarifa); 		
 		if (x > getCreditoDisponible())
 			throw new Exception("Crédito insuficiente");
-		Movimiento m = new Movimiento();
-		m.setConcepto("Retirada en cuenta asociada (cajero automático)");
-		m.setImporte(x + comision);
+		
 		Date date = new Date();
 		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		m.setFecha(fecha);
-		mMovimientos.addElement(m);
+		mMovimientos.addElement(new Movimiento("Retirada en cuenta asociada (cajero automático)", x + comision, fecha));
 	}
 
 	//traspaso tarjeta a cuenta
@@ -84,26 +81,19 @@ public class Credito extends Tarjeta{
 		double comision = (x * 0.05 < 3.0 ? 3 : x * 0.05); // Añadimos una comisión de un 5%, mínimo de 3 euros.		
 		if (x > getCreditoDisponible())
 			throw new Exception("Crédito insuficiente");
-		Movimiento m = new Movimiento();
-		m.setConcepto("Traspaso desde tarjeta a cuenta");
-		m.setImporte(x);
+
 		Date date = new Date();
 		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		m.setFecha(fecha);
-		mMovimientos.addElement(m);
+		mMovimientos.addElement(new Movimiento("Traspaso desde tarjeta a cuenta", x, fecha));
 		
 		super.getmCuentaAsociada().ingresar("Traspaso desde tarjeta a cuenta", x);
 		super.getmCuentaAsociada().retirar("Comision Traspaso desde tarjeta a cuenta", comision);
 	}
 
 	public void pagoEnEstablecimiento(String datos, double x) throws Exception {
-		Movimiento m = new Movimiento();
-		m.setConcepto("Compra a crédito en: " + datos);
-		m.setImporte(x);
 		Date date = new Date();
 		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		m.setFecha(fecha);
-		mMovimientos.addElement(m);
+		mMovimientos.addElement(new Movimiento("Compra a crédito en: " + datos, x, fecha));
 	}
 
 	public double getCreditoDisponible() {
@@ -121,13 +111,9 @@ public class Credito extends Tarjeta{
 		}
 		
 		if (r != 0) {
-			Movimiento liq = new Movimiento();
-			liq.setConcepto("Liquidación de operaciones tarj. crédito, " + (mes) + " de " + (anyo));
-			liq.setImporte(-r);
 			Date date = new Date();
 			LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-			liq.setFecha(fecha);
-			super.getmCuentaAsociada().addMovimiento(liq);			
+			super.getmCuentaAsociada().addMovimiento(new Movimiento("Liquidación de operaciones tarj. crédito, " + (mes) + " de " + (anyo), -r, fecha));			
 		}
 	}
 	

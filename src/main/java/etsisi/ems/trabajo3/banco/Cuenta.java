@@ -17,13 +17,9 @@ public class Cuenta {
 	}
 
 	public void nuevoMovimiento(String concepto, double importe) {
-		Movimiento m = new Movimiento();
-		m.setConcepto(concepto);
-		m.setImporte(importe);
 		Date date = new Date();
 		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		m.setFecha(fecha);
-		this.mMovimientos.addElement(m);
+		this.mMovimientos.addElement(new Movimiento(concepto, importe, fecha));
 	}
 
 	public void ingresar(double x) throws Exception {
