@@ -5,38 +5,31 @@ import java.util.Vector;
 import java.time.LocalDate;
 import java.time.ZoneId;
 
-public class Credito {
-	public Cuenta mCuentaAsociada;
+public class Credito extends Tarjeta{
 	protected double mCredito;
 	protected Vector<Movimiento> mMovimientos;
-	String mNumero, mTitular;
-	LocalDate mFechaDeCaducidad;
 	public String mNombreEntidad;
 	public int mCCV;
 	public int mMarcaInternacional; //mastercard, maestro, visa ...
 	public int mTipo; //oro platino clásica
 
 
-	public Credito(String numero, String titular, LocalDate fechacaducidad, double credito, int marcainternacional,	String nombreentidad, int ccv) {
-		mNumero = numero;
-		mTitular = titular;
-		mFechaDeCaducidad = fechacaducidad;
+	public Credito(String numero, String titular, LocalDate fechaCaducidad, double credito, int marcaInternacional,	String nombreEntidad, int ccv) {
+		super(numero, titular, fechaCaducidad);
 		mCredito = credito;
 		mMovimientos = new Vector<Movimiento>();
-		mMarcaInternacional = marcainternacional;
-		mNombreEntidad = nombreentidad;
+		mMarcaInternacional = marcaInternacional;
+		mNombreEntidad = nombreEntidad;
 		mCCV = ccv;
 	}
 	
-	public Credito(String numero, String titular, LocalDate fechacaducidad, int tipo, int marcainternacional, String nombreentidad, int ccv) {
-		mNumero = numero;
-		mTitular = titular;
-		mFechaDeCaducidad = fechacaducidad;
+	public Credito(String numero, String titular, LocalDate fechaCaducidad, int tipo, int marcaInternacional, String nombreEntidad, int ccv) {
+		super(numero, titular, fechaCaducidad);
 		mTipo = tipo;
 		mCredito = calcularCredito(mTipo);
 		mMovimientos = new Vector<Movimiento>();
-		mMarcaInternacional = marcainternacional;
-		mNombreEntidad = nombreentidad;
+		mMarcaInternacional = marcaInternacional;
+		mNombreEntidad = nombreEntidad;
 		mCCV = ccv;
 	}
 	
@@ -57,10 +50,6 @@ public class Credito {
 				break;		
 		}
 		return credito;
-	}
-
-	public void setCuenta(Cuenta c) {
-		mCuentaAsociada = c;
 	}
 
 	public void retirar(double x) throws Exception {	
@@ -109,8 +98,8 @@ public class Credito {
 		m.setFecha(fecha);
 		mMovimientos.addElement(m);
 		
-		mCuentaAsociada.ingresar("Traspaso desde tarjeta a cuenta", x);
-		mCuentaAsociada.retirar("Comision Traspaso desde tarjeta a cuenta", comision);
+		super.getmCuentaAsociada().ingresar("Traspaso desde tarjeta a cuenta", x);
+		super.getmCuentaAsociada().retirar("Comision Traspaso desde tarjeta a cuenta", comision);
 	}
 
 	public void pagoEnEstablecimiento(String datos, double x) throws Exception {
@@ -124,7 +113,7 @@ public class Credito {
 	}
 
 	public double getCreditoDisponible() {
-		return mCredito - this.mCuentaAsociada.getSaldo(this.mMovimientos);
+		return mCredito - super.getmCuentaAsociada().getSaldo(this.mMovimientos);
 	}
 
 	public void liquidar(int mes, int anyo) throws Exception {
@@ -144,7 +133,7 @@ public class Credito {
 			Date date = new Date();
 			LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 			liq.setFecha(fecha);
-			mCuentaAsociada.addMovimiento(liq);			
+			super.getmCuentaAsociada().addMovimiento(liq);			
 		}
 	}
 	
