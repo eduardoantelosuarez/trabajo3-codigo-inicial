@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.Vector;
 
 import etsisi.ems.trabajo3.banco.EntidadEmisora;
+import etsisi.ems.trabajo3.banco.EntidadEmisoraTipo;
 import etsisi.ems.trabajo3.banco.Movimiento;
 
 import java.time.LocalDate;
@@ -51,27 +52,11 @@ public class Credito extends Tarjeta{
 	}
 
 	public void retirar(double x) throws Exception {	
-		double comisiontarifa;
-		switch (this.mEntidadEmisora.getmMarcaInternacional()) {
-		case 1: //mastercard
-			comisiontarifa = 0.05;
-			break;	
-		case 2: //maestro
-			comisiontarifa = 0.05;
-			break;	
-		case 3: //visa clásica
-			comisiontarifa = 0.03;
-			break;
-		case 4: //visa electrón
-			comisiontarifa = 0.02;
-			break;
-		default:
-			comisiontarifa = 0.05;
-			break;		
-		}
+		EntidadEmisoraTipo entidadEmisora = EntidadEmisoraTipo.getByTipo(this.mEntidadEmisora.getmMarcaInternacional());
+		double comisionTarifa = entidadEmisora.getmComision();
 		
 		// Añadimos una comisión de un 5% o 3% o 2%, mínimo de 3 euros.
-		double comision = (x * comisiontarifa < 3.0 ? 3 : x * comisiontarifa); 		
+		double comision = (x * comisionTarifa < 3.0 ? 3 : x * comisionTarifa); 		
 		if (x > getCreditoDisponible())
 			throw new Exception("Crédito insuficiente");
 		
