@@ -1,7 +1,11 @@
-package etsisi.ems.trabajo3.banco;
+package etsisi.ems.trabajo3.tarjetas;
 
 import java.util.Date;
 import java.util.Vector;
+
+import etsisi.ems.trabajo3.banco.EntidadEmisora;
+import etsisi.ems.trabajo3.banco.Movimiento;
+
 import java.time.LocalDate;
 import java.time.ZoneId;
 

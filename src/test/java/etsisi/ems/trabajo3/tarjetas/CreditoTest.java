@@ -1,4 +1,4 @@
-package etsisi.ems.trabajo3.banco;
+package etsisi.ems.trabajo3.tarjetas;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -11,6 +11,11 @@ import org.junit.Test;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+
+import etsisi.ems.trabajo3.banco.Cuenta;
+import etsisi.ems.trabajo3.banco.EntidadEmisora;
+import etsisi.ems.trabajo3.tarjetas.Credito;
+import etsisi.ems.trabajo3.tarjetas.Tarjeta;
 
 public class CreditoTest extends TestCase {
 	Cuenta cuenta;

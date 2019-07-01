@@ -1,4 +1,4 @@
-package etsisi.ems.trabajo3.banco;
+package etsisi.ems.trabajo3.tarjetas;
 
 public class Debito extends Tarjeta {
 	

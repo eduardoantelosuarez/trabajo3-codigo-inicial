@@ -1,6 +1,8 @@
-package etsisi.ems.trabajo3.banco;
+package etsisi.ems.trabajo3.tarjetas;
 
 import java.time.LocalDate;
+
+import etsisi.ems.trabajo3.banco.Cuenta;
 
 public class Tarjeta {
 	private Cuenta mCuentaAsociada;

@@ -1,4 +1,4 @@
-package etsisi.ems.trabajo3.banco;
+package etsisi.ems.trabajo3.tarjetas;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -8,6 +8,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import etsisi.ems.trabajo3.banco.Cuenta;
+import etsisi.ems.trabajo3.tarjetas.Debito;
+import etsisi.ems.trabajo3.tarjetas.Tarjeta;
 import junit.framework.TestCase;
 
 public class DebitoTest extends TestCase {
