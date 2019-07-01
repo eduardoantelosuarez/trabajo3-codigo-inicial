@@ -60,9 +60,7 @@ public class Credito extends Tarjeta{
 		if (x > getCreditoDisponible())
 			throw new Exception("Crédito insuficiente");
 		
-		Date date = new Date();
-		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		mMovimientos.addElement(new Movimiento("Retirada en cuenta asociada (cajero automático)", x + comision, fecha));
+		this.addNuevoMovimiento("Retirada en cuenta asociada (cajero automático)", x + comision);
 	}
 
 	//traspaso tarjeta a cuenta
@@ -70,19 +68,15 @@ public class Credito extends Tarjeta{
 		double comision = (x * 0.05 < 3.0 ? 3 : x * 0.05); // Añadimos una comisión de un 5%, mínimo de 3 euros.		
 		if (x > getCreditoDisponible())
 			throw new Exception("Crédito insuficiente");
-
-		Date date = new Date();
-		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		mMovimientos.addElement(new Movimiento("Traspaso desde tarjeta a cuenta", x, fecha));
+		
+		this.addNuevoMovimiento("Traspaso desde tarjeta a cuenta", x);
 		
 		super.getmCuentaAsociada().ingresar("Traspaso desde tarjeta a cuenta", x);
 		super.getmCuentaAsociada().retirar("Comision Traspaso desde tarjeta a cuenta", comision);
 	}
 
 	public void pagoEnEstablecimiento(String datos, double x) throws Exception {
-		Date date = new Date();
-		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-		mMovimientos.addElement(new Movimiento("Compra a crédito en: " + datos, x, fecha));
+		this.addNuevoMovimiento("Compra a crédito en: " + datos, x);
 	}
 
 	public double getCreditoDisponible() {
@@ -104,6 +98,12 @@ public class Credito extends Tarjeta{
 			LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 			super.getmCuentaAsociada().addMovimiento(new Movimiento("Liquidación de operaciones tarj. crédito, " + (mes) + " de " + (anyo), -r, fecha));			
 		}
+	}
+	
+	public void addNuevoMovimiento(String concepto, double importe) {
+		Date date = new Date();
+		LocalDate fecha = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+		mMovimientos.addElement(new Movimiento(concepto, importe, fecha));
 	}
 	
 	//liquidación parcial sobre el total de los gastos realizados con esa tarjeta durante el mes/año  de liquidación que consiste en lo siguiente: 
